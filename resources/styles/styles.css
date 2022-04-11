@@ -1,0 +1,408 @@
+
+body {
+    height: calc(100vh-2px);
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    border-bottom: 2px solid white
+}
+
+
+h1, h2{
+    text-align: center;
+}
+
+h2 {
+    
+    /* font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Mono', monospace; */
+    font-weight: 400;
+}
+
+.title {
+    font-size: 3rem;
+}
+.background {
+    height: calc(100vh - 72px);
+    width: 100%;
+    background-image: url(../images/wallpaper1920-11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+   
+
+}
+
+.logo {
+    
+    margin-left: 1rem;
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/Title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    animation: pulsate 8s linear 1s infinite;
+}
+
+.border {
+    transform: skew(23deg);
+    margin: 0 20px;
+    width: 10px;
+    border-right: 2px solid white;
+    height: 70px;
+}
+
+.box {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    width: 30%;
+    height: 50%;
+    
+}
+
+.contact {
+background-color: white;
+color: black;
+width: 150px;
+height: 50px;
+border-radius: 5px;
+padding: 0.5rem;
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: 900;
+margin-top: 12%;
+margin-left: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+animation: uncontact 0.3s forwards;
+}
+
+.contact:hover {
+   animation: contact 0.2s forwards;
+}
+
+.contact:active {
+   transform: scale(0.95);
+}
+
+.dissapear {
+    animation: diss 3s infinite ease-in;
+}
+
+@keyframes uncontact {
+    0% {
+        background-color: black;
+        outline: 2px solid white;
+        color: white;
+    }
+    
+    100% {
+        background-color: white;
+      
+        color: black;
+}
+}
+@keyframes contact {
+    100% {
+        background-color: black;
+        outline: 2px solid white;
+        color: white;
+}
+}
+
+@keyframes diss {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes pulsate {
+   
+    25% {
+        
+        
+       
+        transform: scale(1.29);
+    }
+    50% {
+       
+        transform: scale(1.0);
+        
+    }
+}
+
+/* IGNORE FOR NOW
+/* 
+.lines {
+    height: 0.14vw;
+    min-height: 1.5px;
+    
+    
+}
+
+.line-1 {
+    width: 252px;
+    position: absolute;
+    top: calc(35.9vh + 60px);
+    left: 49.25%;
+    transform: rotate(-45deg);
+    z-index: 1;
+    background-color: white;
+}
+
+.line-1-anim {
+    width: 252px;
+    position: absolute;
+    top: calc(35.9vh + 60px);
+    left: 49.25%;
+    transform: rotate(-45deg);
+    background-color: white; 
+    z-index: 0;
+}
+.backline {
+    height: 0.14vw;
+    min-height: 1.5px;
+}
+.line-transparent {
+    width: 252px;
+    position: absolute;
+    top: calc(35.9vh + 40px);
+    left: 48%;
+    transform: rotate(-45deg);
+    z-index: 4;
+    border: 20px solid rgb(0, 0, 255, 0);;
+    
+}
+
+.lines.animated {
+      -moz-animation: linetrill 1s;
+    -webkit-animation: linetrill 1s;
+ 
+    animation: linetrill 1s;
+}
+
+
+
+/* @keyframes line-trill {
+    0% {
+        height: 0.14vw;
+        min-height: 1.5px;
+    }
+    
+    25% {
+        height: 0.2vw;
+    }
+
+    50% {
+        height: 1.4vw;
+    }
+
+    75% {
+        height: 0.2vw;
+    }
+
+    100% {
+        height: 0.14vw;
+        min-height: 1.5px
+    }
+} */
+
+/* @-webkit-keyframes linetrill {
+    0% {
+        top: calc(35.9vh + 60px);
+    left: 49.25%;
+    }
+    
+    25% {
+        top: calc(35.9vh + 55px);
+    left: 49.1%;
+    }
+
+    50% {
+        top: calc(35.9vh + 50x);
+    left: 49%;
+    }
+
+    75% {
+        top: calc(35.9vh + 55px);
+        left: 49.1%;
+    }
+
+    100% {
+        top: calc(35.9vh + 60px);
+    left: 49.25%;
+    }
+}
+
+@-moz-keyframes linetrill {
+    0% {
+        top: calc(35.9vh + 60px);
+    left: 49.25%;
+    }
+    
+    25% {
+        top: calc(35.9vh + 55px);
+    left: 49.1%;
+    }
+
+    50% {
+        top: calc(35.9vh + 50x);
+    left: 49%;
+    }
+
+    75% {
+        top: calc(35.9vh + 55px);
+        left: 49.1%;
+    }
+
+    100% {
+        top: calc(35.9vh + 60px);
+    left: 49.25%;
+    }
+}
+
+@keyframes linetrill {
+    0% {
+     
+    }
+     30% {
+        
+     }
+    
+    100% {
+        top: 0vh;
+    left: 0%;
+    
+    transform: scale(0, 0);
+    
+    }
+}
+
+
+
+
+@-webkit-keyframes bounce {
+    0% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    17% {
+      top: 15px;
+      animation-timing-function: ease-in;
+    }
+    34% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    51% {
+      top: 8px;
+      animation-timing-function: ease-in;
+    }
+    68% {
+      top: 0px;
+      animation-timing-function: ease-out;
+    }
+    85% {
+      top: 3px;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top: 0;
+    }
+}
+@-moz-keyframes bounce {
+    0% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    17% {
+      top: 15px;
+      animation-timing-function: ease-in;
+    }
+    34% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    51% {
+      top: 8px;
+      animation-timing-function: ease-in;
+    }
+    68% {
+      top: 0px;
+      animation-timing-function: ease-out;
+    }
+    85% {
+      top: 3px;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top: 0;
+    }
+}
+@keyframes bounce {
+    0% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    17% {
+      top: 15px;
+      animation-timing-function: ease-in;
+    }
+    34% {
+      top: 0;
+      animation-timing-function: ease-out;
+    }
+    51% {
+      top: 8px;
+      animation-timing-function: ease-in;
+    }
+    68% {
+      top: 0px;
+       }
+    85% {
+      top: 3px;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top: 0;
+    }
+}
+#container { position:relative; }
+.box { 
+    position: relative;
+    float:left;
+    background:#f00; 
+    width:5px;
+    height:5px;
+    margin-right:5px;
+}
+.box.animate { 
+    -moz-animation: bounce 1s;
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+} */ 
