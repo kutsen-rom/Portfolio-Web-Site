@@ -27,7 +27,25 @@ nav {
 h1, h2{
     text-align: center;
 }
+h1 {
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+.background h2 {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
 
+.based {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin: 1rem 4rem 0 0;
+}
 h2 {
     
     /* font-family: 'IBM Plex Mono', monospace;
@@ -49,11 +67,12 @@ a {
     background-image: url(../images/background-12.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 120%;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    animation: background 300s infinite linear;
 }
 
 .logo-container {
@@ -64,6 +83,84 @@ a {
     
 }
 
+
+/*    EXPERIMENTAL    */
+.corner-nav {
+     
+    --all:0px;
+    --b: white;
+ 
+    
+    
+    background:
+      
+      
+       linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
+      
+       var(--img,red);
+    background-origin:border-box;
+    background-repeat:no-repeat;
+    -webkit-mask:
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+     -webkit-mask-size:50.5% 50.5%;
+     -webkit-mask-repeat:no-repeat;
+  
+  
+}
+
+.corner-button {
+    
+        --all:0px;
+        --b: white;
+     
+        
+        
+        background:
+          
+           linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+           linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
+          
+           var(--img,red);
+        background-origin:border-box;
+        background-repeat:no-repeat;
+        -webkit-mask:
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+         -webkit-mask-size:50.5% 50.5%;
+         -webkit-mask-repeat:no-repeat;
+      
+      
+  }
+
+  .corner-box {
+    --all:0px;
+    --b:white;
+    
+    
+   
+    background:
+       linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+       linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
+       linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
+       linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 1.5px)   ,transparent 0) top right   /50% 50%,
+       var(--img,red);
+    background-origin:border-box;
+    background-repeat:no-repeat;
+    -webkit-mask:
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+     -webkit-mask-size:50.5% 50.5%;
+     -webkit-mask-repeat:no-repeat;
+  }
+
+/*    END OF EXPERIMENTAL    */
 
 
 .logo {
@@ -98,7 +195,7 @@ a {
 
 .border-right {
     transform: skew(-30deg);
-   position: fixed;
+   position: absolute;
    margin-right: 100px;
     width: 10px;
     border-right: 2px solid white;
@@ -106,11 +203,13 @@ a {
 }
 
 
+
 .button {
     padding: 5px;
     animation: navi 0.3s forwards;
-    transform: rotate(-30deg);
-    
+    transform: skew(30deg);
+    position: relative;
+    border: 2px solid transparent;
 }
 
 .button:hover {
@@ -118,9 +217,22 @@ a {
     animation: uncontact 0.3s forwards;
 }
 
+.buttons {
+    padding: 5px;
+    animation: navis 0.3s forwards;
+    transform: skew(30deg);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.buttons:hover {
+    
+    animation: uncontacts 0.3s forwards;
+}
+
 .box {
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: black;
     width: 30%;
     height: 50%;
@@ -161,16 +273,17 @@ overflow:hidden; */
 }
 
 .contact {
+    border: 2px solid white;
 background-color: white;
 color: black;
 width: 150px;
 height: 50px;
-border-radius: 5px;
+border-radius: 1px;
 padding: 0.5rem;
 text-decoration: none;
 font-size: 1.5rem;
 font-weight: 900;
-margin-top: 12%;
+margin-top: 8%;
 margin-left: 10%;
 display: flex;
 align-items: center;
@@ -188,6 +301,31 @@ animation: uncontact 0.3s forwards;
 
 .dissapear {
     animation: diss 3s infinite ease-in;
+}
+/*     ANIMATION     */
+
+@keyframes background {
+    0% {
+        background-position: center;
+    }
+
+    25% {
+        background-position: right;
+    }
+
+    50% {
+        background-position: center;
+    }
+
+    75% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: center;
+    }
+
+
 }
 
 @keyframes switch-rotate {
@@ -224,6 +362,54 @@ animation: uncontact 0.3s forwards;
         background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
     }
 }
+
+@keyframes navis {
+    0% {
+        background-color: white;
+        border: 2px solid white;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    
+    }
+}
+@keyframes uncontacts {
+    0% {
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+        --all:0px;
+        --b: white;
+     
+        
+        
+        background:
+          
+           linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
+           linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
+          
+           var(--img,black);
+        background-origin:border-box;
+        background-repeat:no-repeat;
+        -webkit-mask:
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+         -webkit-mask-size:50.5% 50.5%;
+         -webkit-mask-repeat:no-repeat;
+      
+      
+    }
+    
+    100% {
+        background-color: white;
+      
+        color: black;
+}}
 
 @keyframes navi {
     0% {
