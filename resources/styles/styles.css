@@ -8,9 +8,21 @@ body {
 header {
     height: 70px;
     background-color: black;
-    border-bottom: 2px solid white
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+nav {
+  
+    margin-right: 10%;
+    font-size: 2rem;
+    
+}
+
+
+    
 
 h1, h2{
     text-align: center;
@@ -23,13 +35,18 @@ h2 {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .title {
     font-size: 3rem;
 }
 .background {
     height: calc(100vh - 72px);
     width: 100%;
-    background-image: url(../images/wallpaper1920-11.jpg);
+    background-image: url(../images/background-12.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -42,11 +59,12 @@ h2 {
 .logo-container {
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 70px;
-   
-
+    width: 20%;
+    height: 70px;  
+    
 }
+
+
 
 .logo {
     
@@ -61,12 +79,43 @@ h2 {
     animation: pulsate 8s linear 1s infinite;
 }
 
-.border {
-    transform: skew(23deg);
+.logo-title {
+    background-image: url(../images/logo-title-23.svg);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.border-left {
+    transform: skew(30deg);
     margin: 0 20px;
     width: 10px;
     border-right: 2px solid white;
     height: 70px;
+}
+
+.border-right {
+    transform: skew(-30deg);
+   position: fixed;
+   margin-right: 100px;
+    width: 10px;
+    border-right: 2px solid white;
+    height: 70px;
+}
+
+
+.button {
+    padding: 5px;
+    animation: navi 0.3s forwards;
+    transform: rotate(-30deg);
+    
+}
+
+.button:hover {
+    
+    animation: uncontact 0.3s forwards;
 }
 
 .box {
@@ -76,6 +125,39 @@ h2 {
     width: 30%;
     height: 50%;
     
+}
+
+
+.switch-container {
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.switch {
+    background-image: url(../images/portfolio-triangle-05.svg);
+    width: 60px;
+    height: 60px;
+  margin-left: 20px;;
+  background-repeat: no-repeat;
+  animation: switch-unchange 0.3s forwards;
+}
+
+.switch:hover {
+    /* background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg); */
+    background-repeat: no-repeat;
+    animation: switch-change 0.3s forwards;
+}
+
+.switch:active {
+   /* transform: rotate(240deg); */
+    /* margin-top: 20px;
+   margin-right: 8px;  */
+  /* margin-left: 5px;
+
+overflow:hidden; */
+    animation: switch-rotate 0.3s forwards;
 }
 
 .contact {
@@ -106,6 +188,55 @@ animation: uncontact 0.3s forwards;
 
 .dissapear {
     animation: diss 3s infinite ease-in;
+}
+
+@keyframes switch-rotate {
+0% {
+    background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+}
+
+    100% {
+        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+        transform: rotate(240deg);
+        transform-origin: 50% 66%;
+        margin-bottom: 7px;
+        
+    }
+}
+
+@keyframes switch-unchange {
+    0% {
+        
+        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+    }
+
+    100% {
+        background-image: url(../images/portfolio-triangle-05.svg);
+    }
+}
+
+@keyframes switch-change {
+    0% {
+        background-image: url(../images/portfolio-triangle-05.svg);
+    }
+
+    100% {
+        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+    }
+}
+
+@keyframes navi {
+    0% {
+        background-color: white;
+        outline: 2px solid black;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        
+        color: white;
+    
+    }
 }
 
 @keyframes uncontact {
