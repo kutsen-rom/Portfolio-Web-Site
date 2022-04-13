@@ -1,7 +1,11 @@
 /* html {
     cursor: url("../images/curosr-classic-1-06.cur"), default;
 } */
-
+*::selection {
+    background: white;
+    color: black;
+}
+ 
 ::-webkit-scrollbar {
     background-color: black;
 }
@@ -69,7 +73,7 @@ h1 {
     margin-left: 5rem;
     font-size: 2rem;
 }
-.background h2 {
+main h2 {
     margin-top: 2.5rem;
     font-size: 1.6rem;
     margin-left: 1rem;
@@ -99,7 +103,7 @@ a {
 .title {
     font-size: 3rem;
 }
-.background {
+main {
     height: 91vh;
     width: 100%;
     background-image: url(../images/background-12.svg);
@@ -212,7 +216,7 @@ a {
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,red);
+       var(--img,black);
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
@@ -387,21 +391,85 @@ animation: uncontact 0.3s forwards;
 .project-image-container {
     width: 56.25%;
     height: 100%;
-    background-color: transparent;
+    background-color: black;
     background-size: cover;
     border: 0.96px solid white;
     border-radius: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.previous-project {
+   
+    width: 0%;
+    height: 0%;
+}
+
+.projects a {
+    width: 100%;
+    height: 100%;
+}
+
+.current-project-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
-.project-image {
-  
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/jase-bloor-oCZHIa1D4EU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#pr-1 {
+    background-image: url(../images/downsample-28.jpg);
 }
+
+#pr-2 {
+    background-image: url(../images/downsample-30.jpg);
+}
+
+#pr-3 {
+    background-image: url(../images/downsample-33.jpg);
+}
+
+#pr-4 {
+    background-image: url(../images/downsample-34.jpg);
+}
+
+#pr-5 {
+    background-image: url(../images/downsample-35.jpg);
+}
+
+.curr-name {
+    width: 50%;
+    margin-left: 32%;
+    text-align: center;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.curr-description {
+    width: 70%;
+    margin-left: 22%;
+    margin-top: 4%;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+   flex-direction: column;
+   user-select: none;
+}
+
+.next-project {
+    
+    width: 0%;
+    height: 0%;
+}
+
 
 .pr-arrow {
     width: 10%;
@@ -441,20 +509,6 @@ animation: uncontact 0.3s forwards;
 }
 
 
-
-
-.projects h3 {
-    width: 50%;
-    margin-left: 32%;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.projects h5 {
-    width: 70%;
-    margin-left: 22%;
-    margin-top: 4%;
-}
 
 /*      SKILLS      */
 
