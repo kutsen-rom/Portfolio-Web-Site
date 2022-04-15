@@ -72,13 +72,13 @@ function showPrevious () {
 
 
 // console.log(skillsPanel.style.animation)
-
+if(next){
 next.addEventListener("click", showNext);
+}
 
-
-
+if(previous){
 previous.addEventListener("click", showPrevious);
-
+}
 
 if(document.getElementById("skills-button-main")){
 $("#skills-button-main").click(function() {
@@ -96,15 +96,23 @@ if (document.getElementById("skills-button-projects")){
     document.getElementById("skills-button-projects").addEventListener("click", function() {
     
     
-    window.location.href = "./index.html";
     
-    if(document.getElementById("skills-button-main")){
-        $("#skills-button-main").click(function() {
-            const el = $("#skills-panel").addClass("skills-animation");
-            setTimeout(function() {
-                el.removeClass("skills-animation");
-            }, 2000);
-        })};
+    window.addEventListener('load', ()=>{
+        const section = document.getElementById('skills-panel');
+        if(!performance.navigation.type && document.referrer.includes('/projects.html')){
+          section.classList.add('skills-animation')
+          section.addEventListener('animationend', ()=>{
+          section.classList.remove('skills-animation')
+           })
+          }
+        }) 
+    // if(document.getElementById("skills-button-main")){
+    //     $("#skills-button-main").click(function() {
+    //         const el = $("#skills-panel").addClass("skills-animation");
+    //         setTimeout(function() {
+    //             el.removeClass("skills-animation");
+    //         }, 2000);
+    //     })};
     });
     // document.getElementById(localStorage.getItem("mykey")).style.animation = "skills-accent 2s";
    
@@ -113,6 +121,16 @@ if (document.getElementById("skills-button-projects")){
     
 };
 
+
+window.addEventListener('load', ()=>{
+    const section = document.getElementById('skills-panel');
+    if(!performance.navigation.type && document.referrer.includes('/page.html')){
+      section.classList.add('add')
+      section.addEventListener('animationend', ()=>{
+      section.classList.remove('add')
+       })
+      }
+    })
 // skillsButton.addEventListener("click", skillsAccent);
 
 // projects[3].className -= show
