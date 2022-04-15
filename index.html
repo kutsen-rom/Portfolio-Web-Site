@@ -13,6 +13,7 @@
     <title>navsi</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js" defer></script>
+
 </head>
 <body>
 
@@ -29,9 +30,9 @@
     <!--      NAVIGATION      -->
    <nav>
            <a class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px"" href="#">About</a>
-           <a class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px" href="./projects.html">projects</a>
-           <a class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px"" href="#">skills</a>
-           <a class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px"" href="#">contAct</a>
+           <a id="test" class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px" href="./projects.html">projects</a>
+           <a id="skills-button-main"  class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px"" href="#">skills</a>
+           <a class="buttons corner-nav" style="--top-left:10px; --bottom-right: 10px"" href="./contact.html">contAct</a>
            <!-- <a class="button" href="#">About</a>
            <a class="button" href="#">projects</a>
            <a class="button" href="#">skills</a>
@@ -104,7 +105,7 @@
     
     <!--      SKILLS      -->
 
-         <section class="skills">
+         <section class="skills" id="skills-panel">
             <div class="skill sk-html"></div>
             <div class="skill sk-css"></div>
             <div class="skill sk-js"></div>
