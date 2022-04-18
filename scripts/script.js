@@ -13,6 +13,7 @@ const makeNext = " next-project";
 const skillsButton = document.getElementById("skills-button-main");
 const skillsPanel = document.getElementById("skills-panel");
 const animationSkills = "black"
+const menu = document.getElementById("menu");
 let elementNum=0;
 
 
@@ -131,6 +132,50 @@ window.addEventListener('load', ()=>{
        })
       }
     })
+
+// const showMenu = () => {
+//     menu.style.height = ("220px");
+//     menu.style.flexDirection = ("column");
+     
+// }
+
+
+
+menu.addEventListener('click',() => {
+    if (window.matchMedia("(max-width: 470px").matches){
+    menu.style.height = "320px";
+   }
+     
+});
+
+menu.addEventListener('touchend',() => {
+    if (window.matchMedia("(max-width: 470px").matches){
+    menu.style.height = "40px";
+   }
+     
+});
+
+hideOnClickOutside(menu);
+
+function hideOnClickOutside(element) {
+    
+    const outsideClickListener = event => {
+        if (!element.contains(event.target) ) { // or use: event.target.closest(selector) === null
+          element.style.height = '40px';
+         
+        }
+    }
+
+    
+
+    document.addEventListener('click', outsideClickListener)
+}
+
+
+
+// menu.addEventListener("mouseleave", () => {
+//     menu.style.height = "40px";
+// })
 // skillsButton.addEventListener("click", skillsAccent);
 
 // projects[3].className -= show
