@@ -78,12 +78,21 @@ footer {
 }
 
 nav {
-    
-    margin-right: 10%;
+    width: 100%;
+    margin-right: 10.5%;
     font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
     
 }
 
+.menu {
+    width: 83%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 .menu-button{
@@ -1106,7 +1115,9 @@ animation: uncontact 0.3s forwards;
  }
 
  @media only screen and (max-width: 1470px) {
-    
+    .menu {
+        width: 90%;
+    }
  }
 
  @media only screen and (max-width: 1300px) {
@@ -1150,6 +1161,10 @@ animation: uncontact 0.3s forwards;
    .pr-page-box {
        width: 40%;
        height: 25vw;
+   }
+
+   footer {
+       font-size: 0.75rem;
    }
   
 } 
@@ -1233,6 +1248,10 @@ animation: uncontact 0.3s forwards;
     
     height: 25vw;
     
+}
+
+.menu {
+    width: 100%;
 }
 
  } 
@@ -1329,7 +1348,47 @@ animation: uncontact 0.3s forwards;
     .boxes {
         padding-top: 50px;
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-main h2 {
+        font-size: 1.25rem;
+    }
+
+    strong {
+        font-size: 1.5rem;
+    }
+
+    .projects a {
+        font-size: 1rem;
+    }
+
+    .curr-description {
+        font-size: 0.75rem;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .contact {
+        padding: 0rem;
+        margin-bottom: 2%;
+    }
+
+    .contact h3 {
+        margin: 0;
+    }
+   
 }
+
+
 
 @media only screen and (max-width: 515px) {
     nav {
@@ -1339,7 +1398,8 @@ animation: uncontact 0.3s forwards;
 }
 
 @media only screen and (max-width: 470px) {
-   .boxes {
+  
+    .boxes {
        padding-top: 20%;
    }
    
@@ -1350,7 +1410,7 @@ animation: uncontact 0.3s forwards;
     .skills {
         height: 120px;
        flex-wrap: wrap;
-       margin: 5% 0 5% 0;
+     
     }
     .skill {
         width: 100px;
@@ -1365,12 +1425,12 @@ animation: uncontact 0.3s forwards;
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        
+        justify-content: start;
     }
 
   
     .buttons {
-        margin: 1.5% auto;
+        margin: 4px auto;
         width: 90%;
         text-align: center;
     }
@@ -1411,7 +1471,7 @@ animation: uncontact 0.3s forwards;
 
     nav {
         width: 60%;
-        margin-left: 12%;
+        margin-left: 14%;
         font-size: 1.25rem;
        
     }
@@ -1423,7 +1483,100 @@ animation: uncontact 0.3s forwards;
         background-repeat: no-repeat;
     }
    
+    .pr-page-container {
+        height: 110vw;
+    }
    
+    .pr-page-box h2 {
+        font-size: 1.5rem;
+    }
+    .pr-page-box h3 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .contact-main h2 {
+        font-size: 1rem;
+    }
+
+    .skills {
+        margin-top: 20%;
+    } 
+}
+
+@media only screen and (max-width: 380px) {
+    nav {   
+        margin-left: 18%;     
+    }
+    
+    .pr-page-box h2 {
+        font-size: 1rem;
+    }
+    .pr-page-box h3 {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        margin-left: 15%;
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        margin: 0.3rem 4rem 0 0;
+    }
+
+    strong {
+        font-size: 1.2rem;
+    }
+
+    .boxes {
+       
+        padding: 0;
+        height: 500px;
+    }
+    .contact-main h2 {
+        font-size: 1rem;
+    }
+
+    .contact {
+        width: 100px;
+        height: 40px;
+        
+    }
+
+    .contact .corner-button {
+        --top-left:15px;
+        --bottom-right:15px;
+    }
+
+    .skills{
+        margin-top: 15%;
+        height: 250px;
+        
+    }
+
+    .skills-padding {
+        height: auto;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+
+    .based {
+        font-size: 0.8rem;
+        margin-left: 5%;
+    }
+
+    
+
 }
 
 
