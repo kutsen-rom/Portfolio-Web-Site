@@ -4,7 +4,6 @@
 html,
 body {
   height: 100%;
-  
 }
 
 :target {
@@ -16,16 +15,13 @@ body {
     color: black;
 }
 
-
- 
 ::-webkit-scrollbar {
     background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
     border: 1px solid white;
-    border-right: 2px solid white;
-    
+    border-right: 2px solid white; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -38,9 +34,6 @@ body {
     border-right: 2px solid white;
 }
 
-
-
-
 body {
     /* background-attachment: fixed; */
     font-family: 'Major Mono Display', monospace;
@@ -51,11 +44,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
-        
+    color: white; 
     animation: background 300s infinite linear;
     }
-
 
 header {
     height: 70px;
@@ -74,7 +65,6 @@ footer {
     border-top: 2px solid white;
     padding: 1% 0;
     margin-top: auto;
-  
 }
 
 nav {
@@ -83,17 +73,14 @@ nav {
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .menu {
     width: 83%;
-  
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 
 .menu-button{
     display: none;
@@ -106,18 +93,18 @@ nav {
     background-repeat: no-repeat;
 }
     
-
 h1, h2, h4, h5, h6{
     text-align: center;
 }
+
 h4 {
     margin: 0;
 }
+
 h1 {
     margin-left: 5rem;
     font-size: 2rem;
 }
-
 
 main h2 {
     margin-top: 2.5rem;
@@ -135,9 +122,6 @@ main h2 {
     margin: 1rem 4rem 0 0;
 }
 h2 {
-    
-    /* font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Space Mono', monospace; */
     font-weight: 400;
 }
 
@@ -150,15 +134,12 @@ a {
     font-size: 3rem;
 }
 
-
 .boxes {
-  
     height: 30vw;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    
     flex-wrap: wrap;
 }
 
@@ -171,23 +152,15 @@ a {
     align-items: center;
     width: 20%;
     height: 70px;  
-    
 }
-
 
 /*    EXPERIMENTAL  CORNERS   */
 .corner-nav {
-     
     --all:0px;
     --b: white;
  
-    
-    
     background:
-      
-      
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
-      
        var(--img,red);
     background-origin:border-box;
     background-repeat:no-repeat;
@@ -205,17 +178,11 @@ a {
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
      mask-repeat:no-repeat;
-  
-  
 }
 
 .corner-button {
-    
         --all:0px;
-        --b: white;
-     
-        
-        
+        --b: white; 
         background:
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
@@ -238,16 +205,12 @@ a {
          mask-size:50.5% 50.5%;
          -webkit-mask-repeat:no-repeat;
          mask-repeat:no-repeat;
-      
-      
   }
 
   .corner-box {
     --all:0px;
     --b:white;
     
-    
-   
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
@@ -276,8 +239,6 @@ a {
     --all:0px;
     --b:white;
     
-    
-   
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
@@ -306,8 +267,6 @@ a {
     --all:0px;
     --b:white;
     
-    
-   
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
@@ -335,9 +294,7 @@ a {
   .corner-box-menu {
     --all:0px;
     --b:black;
-    
-    
-   
+
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
@@ -364,9 +321,7 @@ a {
 
 /*    END OF EXPERIMENTAL    */
 
-
 .logo {
-    
     margin-left: 1rem;
     width: 55px;
     height: 55px;
@@ -374,7 +329,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
     animation: pulsate 8s linear 1s infinite;
 }
 
@@ -386,8 +340,6 @@ a {
     margin-top: 10px;
     margin-left: 23px;
 }
-
-
 
 .border-left {
     transform: skew(30deg);
@@ -406,8 +358,6 @@ a {
     height: 70px;
 }
 
-
-
 .button {
     padding: 5px;
     animation: navi 0.3s forwards;
@@ -417,7 +367,6 @@ a {
 }
 
 .button:hover {
-    
     animation: uncontact 0.3s forwards;
 }
 
@@ -428,7 +377,6 @@ a {
 }
 
 .buttons:hover {
-    
     animation: uncontacts 0.3s forwards;
 }
 
@@ -438,7 +386,6 @@ a {
     background-color: black;
     width: 30%;
     height: 75%;
-    
 }
 
 
@@ -459,24 +406,17 @@ a {
 }
 
 .switch:hover {
-    /* background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg); */
     background-repeat: no-repeat;
     animation: switch-change 0.3s forwards;
     cursor: pointer;
 }
 
 .switch:active {
-   /* transform: rotate(240deg); */
-    /* margin-top: 20px;
-   margin-right: 8px;  */
-  /* margin-left: 5px;
-
-overflow:hidden; */
     animation: switch-rotate 0.3s forwards;
 }
 
 .contact {
-    border: 2px solid white;
+border: 2px solid white;
 background-color: white;
 color: black;
 width: 150px;
@@ -528,10 +468,7 @@ animation: uncontact 0.3s forwards;
     align-items: center;
 }
 
-
-
 .previous-project {
-   
     width: 0%;
     height: 0%;
 }
@@ -546,8 +483,7 @@ animation: uncontact 0.3s forwards;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center; 
 }
 
 #pr-1 {
@@ -597,11 +533,9 @@ animation: uncontact 0.3s forwards;
 }
 
 .next-project {
-    
     width: 0%;
     height: 0%;
 }
-
 
 .pr-arrow {
     width: 10%;
@@ -617,13 +551,11 @@ animation: uncontact 0.3s forwards;
 }
 
 .left-arrow:hover {
-    animation: left-arrow-hover 0.3s forwards;
-    
+    animation: left-arrow-hover 0.3s forwards; 
 }
 
 .left-arrow:active {
-    animation: left-arrow-active .1s forwards linear;
-    
+    animation: left-arrow-active .1s forwards linear; 
 }
 
 .right-arrow {
@@ -631,16 +563,12 @@ animation: uncontact 0.3s forwards;
 }
 
 .right-arrow:hover {
-    animation: right-arrow-hover 0.3s forwards;
-   
+    animation: right-arrow-hover 0.3s forwards;  
 }
 
 .right-arrow:active {
-    animation: right-arrow-active .1s forwards linear;
-    
+    animation: right-arrow-active .1s forwards linear;   
 }
-
-
 
 /*      SKILLS      */
 
@@ -660,13 +588,10 @@ animation: uncontact 0.3s forwards;
     animation: skills-accent 2s;
 }
 
-
-
 .skill {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
-    /* box-shadow: 10px 10px 10px black; */
 }
 
 .skills-padding {
@@ -705,18 +630,13 @@ animation: uncontact 0.3s forwards;
     background-image: url(../images/skill-22.svg)
 }
 
-
-
 /*      PROJECTS PAGE      */
-
 
 .projects-main-section {
     padding-top: 2%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-   
-    
 }
 
 .pr-page-container {
@@ -781,11 +701,9 @@ animation: uncontact 0.3s forwards;
 
 .contact-main h2 {
     font-weight: bold;;
-    
 }
 
 .contact-container {
-    
     width: 85%;
     height: 20%;
     display: flex;
@@ -797,18 +715,13 @@ animation: uncontact 0.3s forwards;
 .contact-box a {
     width: 20%;
     height: 100%;
-    
-  
 }
 
 .contact-box-image {
     width: 100%;
     height: 100%;
-  
     background-repeat: no-repeat;
-    
 }
-
 
 .linked-in {
     background-image: url(../images/linkedin-classic.svg);
@@ -817,9 +730,8 @@ animation: uncontact 0.3s forwards;
 .mail {
     background-image: url(../images/mail-classic.svg);
 }
+
 /*     ANIMATION     */
-
-
 
 @keyframes background {
     0% {
@@ -841,8 +753,6 @@ animation: uncontact 0.3s forwards;
     100% {
         background-position: center;
     }
-
-
 }
 
 @keyframes switch-rotate {
@@ -855,7 +765,6 @@ animation: uncontact 0.3s forwards;
         transform: rotate(240deg);
         transform-origin: 50% 66%;
         margin-bottom: 7px;
-        
     }
 }
 
@@ -868,14 +777,12 @@ animation: uncontact 0.3s forwards;
             background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
             transform: rotate(240deg);
             transform-origin: 50% 66%;
-            margin-bottom: 7px;
-            
+            margin-bottom: 7px; 
         }
     }
 
 @keyframes switch-unchange {
     0% {
-        
         background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
     }
 
@@ -908,9 +815,9 @@ animation: uncontact 0.3s forwards;
         background-color: black;
         border: 2px solid black;
         color: white;
-    
     }
 }
+
 @keyframes uncontacts {
     0% {
         background-color: black;
@@ -918,9 +825,7 @@ animation: uncontact 0.3s forwards;
         color: white;
         --all:0px;
         --b: white;
-     
-        
-        
+
         background:
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
@@ -936,13 +841,10 @@ animation: uncontact 0.3s forwards;
            linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
          -webkit-mask-size:50.5% 50.5%;
          -webkit-mask-repeat:no-repeat;
-      
-      
     }
     
     100% {
         background-color: white;
-      
         color: black;
 }}
 
@@ -954,9 +856,7 @@ animation: uncontact 0.3s forwards;
     }
     100% {
         background-color: black;
-        
         color: white;
-    
     }
 }
 
@@ -969,7 +869,6 @@ animation: uncontact 0.3s forwards;
     
     100% {
         background-color: white;
-      
         color: black;
 }
 }
@@ -994,23 +893,17 @@ animation: uncontact 0.3s forwards;
     }
 }
 @keyframes pulsate {
-   
     25% {
-        
-        
-       
         transform: scale(1.25);
     }
+
     50% {
-       
         transform: scale(1.0);
-        
     }
 }
 
 @keyframes left-arrow-hover {
     0% {
-        
         background-image: url(../images/arrow-classic-left.svg);
     }
 
@@ -1034,16 +927,13 @@ animation: uncontact 0.3s forwards;
         background-image: url(../images/light-arrow-left.svg);
        position: relative;
         left: 0%;
-        
     }
 
     50% {
         left: -2%;
-        
     }
     
     100% {
-        
        position: relative;
        left: 0.1%;
        background-image: url(../images/arrow-classic-left.svg);
@@ -1052,7 +942,6 @@ animation: uncontact 0.3s forwards;
 
 @keyframes right-arrow-hover {
     0% {
-        
         background-image: url(../images/arrow-classic-right.svg);
     }
 
@@ -1076,16 +965,13 @@ animation: uncontact 0.3s forwards;
         background-image: url(../images/light-arrow-right.svg);
        position: relative;
         right: 0%;
-        
     }
 
     50% {
-        right: -2%;
-        
+        right: -2%; 
     }
     
     100% {
-        
        position: relative;
        right: 0.01%;
        background-image: url(../images/arrow-classic-right.svg);
@@ -1104,15 +990,9 @@ animation: uncontact 0.3s forwards;
     100% {
         border: 2px solid transparent;
     }
-
-
 }
 
 /*      MEDIA QUERIES      */
- @media only screen and (max-width: 1535px) {
-   
-  
- }
 
  @media only screen and (max-width: 1470px) {
     .menu {
@@ -1121,8 +1001,6 @@ animation: uncontact 0.3s forwards;
  }
 
  @media only screen and (max-width: 1300px) {
-    
-
     nav  {
         font-size: 1.5rem;
         margin-right: 5%;
@@ -1147,7 +1025,6 @@ animation: uncontact 0.3s forwards;
 @media only screen and (max-width: 950px) {
    nav {
     margin-right: 0%;
-       
    }
 
    .logo-container {
@@ -1166,15 +1043,11 @@ animation: uncontact 0.3s forwards;
    footer {
        font-size: 0.75rem;
    }
-  
 } 
 
 
 
 @media only screen and (max-width: 820px) {
-   
- 
-   
     nav {
         font-size: 1.2rem;
         margin-left: 10%;
@@ -1185,49 +1058,35 @@ animation: uncontact 0.3s forwards;
     }
 
     .border-left {
-        
-       
         height: 52px;
     }
     
     .border-right {
-      
-      
         margin-right: 70px;
         height: 52px;
     }
     .logo-container {
-   
         width: 40px;
-        height: 40px;  
-        
+        height: 40px;   
     }
 
     .logo {
-    
-       
         width: 40px;
         height: 40px;
-     
     }
 
     .switch-container {
-   
         width: 110px;
         height: 50px;
-        
     }
 
    
     
     .switch {
-        
         width: 50px;
         height: 100%;
-      
     }
    .boxes {
-    
        flex-direction: column-reverse;
        height: 110vw;
        flex-wrap: nowrap;
@@ -1243,11 +1102,8 @@ animation: uncontact 0.3s forwards;
        width: 90%;
    }
 
-   .projects-container {
-   
-    
-    height: 25vw;
-    
+   .projects-container {    
+    height: 25vw;  
 }
 
 .menu {
@@ -1268,43 +1124,31 @@ animation: uncontact 0.3s forwards;
         font-size: 1rem;
     }
     .border-left {
-        
-       
         height: 38px;
     }
     
     .border-right {
-      
-      
         margin-right: 40px;
         height: 38px;
     }
     .logo-container {
-   
         width: 30px;
         height: 30px;  
-        
     }
 
     .logo {
-    
-       
         width: 30px;
         height: 30px;
-     
     }
 
     .switch-container {
-   
         width: 80px;
-        height: 35px;
-        
+        height: 35px;    
     }
 
    
     
     .switch {
-        
         width: 35px;
         height: 100%;
       
@@ -1410,12 +1254,10 @@ animation: uncontact 0.3s forwards;
     .skills {
         height: 120px;
        flex-wrap: wrap;
-     
     }
     .skill {
         width: 100px;
         height: 40px;
-        
         background-position: center;
     }
 
@@ -1457,8 +1299,7 @@ animation: uncontact 0.3s forwards;
 
     .menu-button-container {
         display: flex;
-       justify-content:space-evenly;
-        
+       justify-content:space-evenly;    
         width: 100%;
         height: 220px;
     }
@@ -1473,7 +1314,6 @@ animation: uncontact 0.3s forwards;
         width: 60%;
         margin-left: 14%;
         font-size: 1.25rem;
-       
     }
     
     .hamburger {
@@ -1574,9 +1414,6 @@ animation: uncontact 0.3s forwards;
         font-size: 0.8rem;
         margin-left: 5%;
     }
-
-    
-
 }
 
 
