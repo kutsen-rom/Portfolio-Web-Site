@@ -80,6 +80,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 100%;
 }
 
 .menu-button{
@@ -358,7 +359,7 @@ a {
     height: 70px;
 }
 
-.button {
+/* .button {
     padding: 5px;
     animation: navi 0.3s forwards;
     transform: skew(30deg);
@@ -368,17 +369,17 @@ a {
 
 .button:hover {
     animation: uncontact 0.3s forwards;
-}
+} */
 
 .buttons {
     padding: 5px;
-    animation: navis 0.3s forwards;
+    /* animation: navis 0.3s forwards; */
     border: 2px solid transparent;
 }
 
-.buttons:hover {
+/* .buttons:hover {
     animation: uncontacts 0.3s forwards;
-}
+} */
 
 .box {
     border: 2px solid white;
@@ -400,12 +401,18 @@ a {
     background-image: url(../images/portfolio-triangle-05.svg);
     width: 60px;
     height: 60px;
-  margin-left: 20px;;
+  margin-left: -60px;;
   background-repeat: no-repeat;
   animation: switch-unchange 0.3s forwards;
 }
 
-.switch:hover {
+.switch-title {
+    font-weight: bold;
+    transform: rotate(300deg);
+    font-size: 1.3rem;
+}
+
+/* .switch:hover {
     background-repeat: no-repeat;
     animation: switch-change 0.3s forwards;
     cursor: pointer;
@@ -413,7 +420,7 @@ a {
 
 .switch:active {
     animation: switch-rotate 0.3s forwards;
-}
+} */
 
 .contact {
 border: 2px solid white;
@@ -431,16 +438,16 @@ margin-left: 10%;
 display: flex;
 align-items: center;
 justify-content: center;
-animation: uncontact 0.3s forwards;
+/* animation: uncontact 0.3s forwards; */
 }
 
-.contact:hover {
+/* .contact:hover {
    animation: contact 0.2s forwards;
 }
 
 .contact:active {
    transform: scale(0.95);
-}
+} */
 
 .dissapear {
     animation: diss 3s infinite ease-in;
@@ -757,16 +764,29 @@ animation: uncontact 0.3s forwards;
 
 @keyframes switch-rotate {
 0% {
-    background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+    background-image: url(../images/switch-hover-04.svg);
 }
 
     100% {
-        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+        background-image: url(../images/switch-hover-04.svg);
         transform: rotate(240deg);
         transform-origin: 50% 66%;
         margin-bottom: 7px;
     }
 }
+
+@keyframes switch-rotate-light {
+    0% {
+        background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
+    
+        100% {
+            background-image: url(../images/light-theme/switch-light-hover-39.svg);
+            transform: rotate(240deg);
+            transform-origin: 50% 66%;
+            margin-bottom: 7px;
+        }
+    }
 
 @keyframes switch-rotate-2 {
     0% {
@@ -783,7 +803,7 @@ animation: uncontact 0.3s forwards;
 
 @keyframes switch-unchange {
     0% {
-        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+        background-image: url(../images/switch-hover-04.svg);
     }
 
     100% {
@@ -797,13 +817,29 @@ animation: uncontact 0.3s forwards;
     }
 
     100% {
-        background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
+        background-image: url(../images/switch-hover-04.svg);
     }
 }
 
+@keyframes switch-change-light {
+    0% {
+        background-image: url(../images/light-theme/switch-light-37.svg);
+    }
 
+    100% {
+        background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
+}
 
+@keyframes switch-unchange-light {
+    0% {
+        background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
 
+    100% {
+        background-image: url(../images/light-theme/switch-light-37.svg);
+    }
+}
 
 @keyframes navis {
     0% {
@@ -848,6 +884,49 @@ animation: uncontact 0.3s forwards;
         color: black;
 }}
 
+@keyframes navis-light {
+    0% {
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    }
+    100% {
+        background-color: white;
+        border: 2px solid white;
+        color: black;
+    }
+}
+
+@keyframes uncontacts-light {
+    0% {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        --all:0px;
+        --b: black;
+
+        background:
+          
+           linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
+           linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
+          
+           var(--img,white);
+        background-origin:border-box;
+        background-repeat:no-repeat;
+        -webkit-mask:
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+         -webkit-mask-size:50.5% 50.5%;
+         -webkit-mask-repeat:no-repeat;
+    }
+    
+    100% {
+        background-color: black;
+        color: white;
+}}
+
 @keyframes navi {
     0% {
         background-color: white;
@@ -870,14 +949,36 @@ animation: uncontact 0.3s forwards;
     100% {
         background-color: white;
         color: black;
+    }
 }
-}
+
 @keyframes contact {
     100% {
         background-color: black;
         outline: 2px solid white;
         color: white;
+    }
 }
+
+@keyframes contact-light {
+    100% {
+        background-color: white;
+        outline: 2px solid black;
+        color: black;
+    }
+}
+
+@keyframes uncontact-light {
+    0% {
+        background-color: white;
+        outline: 2px solid black;
+        color: black;
+    }
+    
+    100% {
+        background-color: black;
+        color: white;
+    }
 }
 
 @keyframes diss {
