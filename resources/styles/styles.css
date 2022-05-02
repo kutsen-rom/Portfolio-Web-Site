@@ -14,7 +14,7 @@ html[data-theme="light"] {
 html,
 body {
   height: 100%;
-
+--corner: 20px;
 }
 
 :target {
@@ -305,7 +305,7 @@ a {
 
   .corner-box-menu {
     --all:0px;
-    --b:var(--main-color);
+    /* --b:var(--main-color); */
 
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
@@ -420,7 +420,7 @@ a {
 .switch-title {
     font-weight: bold;
     transform: rotate(300deg);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 /* .switch:hover {
@@ -729,7 +729,7 @@ justify-content: center;
 }
 
 .contact-box a {
-    width: 20%;
+    width: 110px;
     height: 100%;
 }
 
@@ -1197,6 +1197,65 @@ justify-content: center;
     }
 } */
 
+@keyframes linked-in-hover {
+    0% {
+        background-image: url(../images/linkedin-classic.svg);
+    }
+
+    100% {
+        background-image: url(../images/linked-in-hover.svg);
+    }
+}
+
+@keyframes linked-in-unhover {
+    0% {
+        background-image: url(../images/linked-in-hover.svg);
+    }
+
+    100% {
+        background-image: url(../images/linkedin-classic.svg);
+    }
+}
+
+@keyframes mail-hover {
+    0% {
+        background-image: url(../images/mail-classic.svg);
+    }
+
+    100% {
+        background-image: url(../images/mail-hover.svg)
+    }
+}
+
+@keyframes mail-unhover {
+    0% {
+        background-image: url(../images/mail-hover.svg);
+    }
+
+    100% {
+        background-image: url(../images/mail-classic.svg);
+    }
+}
+
+@keyframes github-hover {
+    0% {
+        background-image: url(../images/skill-18.svg);
+    }
+
+    100% {
+        background-image: url(../images/github-outline.svg);
+    }
+}
+
+@keyframes github-unhover {
+    0% {
+        background-image: url(../images/github-outline.svg);
+    }
+
+    100% {
+        background-image: url(../images/skill-18.svg);
+    }
+}
 
     @keyframes linked-in-light-hover {
         0% {
@@ -1296,6 +1355,8 @@ justify-content: center;
     .contact-main h2 {
         font-size: 1.6rem;
     } 
+
+   
  }
 
  @media only screen and (max-width: 1350px) {
@@ -1440,6 +1501,7 @@ justify-content: center;
         margin-right: 70px;
         height: 52px;
     }
+
     .logo-container {
         width: 40px;
         height: 40px;   
@@ -1448,6 +1510,10 @@ justify-content: center;
     .logo {
         width: 40px;
         height: 40px;
+    }
+
+    .switch-title {
+        font-size: 0.9rem;
     }
 
     .switch-container {
@@ -1542,9 +1608,11 @@ justify-content: center;
     }
     
     .border-right {
-        margin-right: 40px;
+        margin-right: 70px;
         height: 38px;
     }
+
+    
     .logo-container {
         width: 30px;
         height: 30px;  
@@ -1560,12 +1628,14 @@ justify-content: center;
         height: 35px;    
     }
 
-   
+    .switch-title {
+        font-size: 0.5rem;
+    }
     
     .switch {
         width: 35px;
         height: 100%;
-      
+        margin-left: -45px;
     }
 
 
@@ -1615,6 +1685,11 @@ justify-content: center;
 
     h1 {
         font-size: 1.5rem;
+    }
+
+    .contact-box a {
+        width: 70px;
+       
     }
 
     .contact-main h1 {
@@ -1667,6 +1742,12 @@ justify-content: center;
 
 @media only screen and (max-width: 470px) {
   
+    .contact-main h1 {
+        margin-left: 23%;
+        margin-top: 4%;
+        font-size: 1.2rem;
+    }
+
     .boxes {
        padding-top: 20%;
    }
@@ -1776,6 +1857,10 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 380px) {
+   #inline {
+       --corner: 15px;
+   }
+   
     nav {   
         margin-left: 18%;     
     }
@@ -1813,6 +1898,10 @@ justify-content: center;
         width: 100px;
         height: 40px;
         
+    }
+
+    .contact-box a {
+        width: 50px;
     }
 
     .contact .corner-button {

@@ -235,23 +235,23 @@ function hideOnClickOutside(element) {
 
 // SWITCH ANIMATION
 
-switchButton.addEventListener("mouseover", () => {
-    switchButton.style.animation = "switch-change 0.3s forwards";
-    switchButton.style.cursor = "pointer";
-})
+// switchButton.addEventListener("mouseover", () => {
+//     switchButton.style.animation = "switch-change 0.3s forwards";
+//     switchButton.style.cursor = "pointer";
+// })
 
-switchButton.addEventListener("mouseleave", () => {
-    switchButton.style.animation = "switch-unchange 0.3s forwards";
-})
-switchButton.addEventListener("mousedown", () => {
-    switchButton.style.animation = "switch-rotate 0.3s forwards";
-})
+// switchButton.addEventListener("mouseleave", () => {
+//     switchButton.style.animation = "switch-unchange 0.3s forwards";
+// })
+// switchButton.addEventListener("mousedown", () => {
+//     switchButton.style.animation = "switch-rotate 0.3s forwards";
+// })
 
-switchButton.addEventListener("animationend", () => {
-    if (switchButton.style.animation === "0.3s ease 0s 1 normal forwards running switch-rotate"){
-        switchButton.style.animation = "";
-    }
-})
+// switchButton.addEventListener("animationend", () => {
+//     if (switchButton.style.animation === "0.3s ease 0s 1 normal forwards running switch-rotate"){
+//         switchButton.style.animation = "";
+//     }
+// })
 
 
 //  CONTACT BUTTON
@@ -855,6 +855,9 @@ const switchToLightTheme = () => {
             switchButton.style.backgroundImage = "url(./resources/images/light-theme/switch-light-37.svg)"
             document.getElementsByClassName("logo-title")[0].style.backgroundImage = "url(./resources/images/light-theme/logo-title-light.svg)"
 
+        //  MENY BUTTON 
+
+        document.getElementsByClassName("hamburger")[0].style.backgroundImage = "url(./resources/images/light-theme/menu-light.svg)";
 
          // THEME SWITCH
 
@@ -875,7 +878,7 @@ const switchToLightTheme = () => {
                 switchButton.style.animation = "";
             }
         })
-        
+
         switchButton.style.animation = "switch-unchange-light 0.3s forwards"
 
         // LEFT RIGHT ARROWS ANIMATION
@@ -1034,6 +1037,10 @@ const switchToLightTheme = () => {
                 document.getElementsByClassName("logo-title")[0].style.backgroundImage = "url(./resources/images/logo-title-23.svg)"
 
 
+                // MENU BUTTON
+
+                document.getElementsByClassName("hamburger")[0].style.backgroundImage = "url(./resources/images/hamburger-classic-37-37.svg)";
+
                   // THEME SWITCH
     
             switchButton.addEventListener("mouseover", () => {
@@ -1135,7 +1142,71 @@ const switchToLightTheme = () => {
                 if (document.getElementsByClassName("sk-terminal")[0]){
                 document.getElementsByClassName("sk-terminal")[0].style.backgroundImage = "url(./resources/images/skill-22.svg)"
         }
+
+        if (linkedIn){
+           
+            linkedIn.style.animation = "linked-in-unhover .2s ease-out forwards";
+
+            linkedIn.addEventListener("mouseover", () => {
+                linkedIn.style.animation = "linked-in-hover .2s ease-out forwards";
+            })
+
+            linkedIn.addEventListener("mouseleave", () => {
+                linkedIn.style.animation = "linked-in-unhover .2s ease-out forwards";
+            })
+
+            linkedIn.addEventListener("mousedown", () => {
+                linkedIn.style.transform = "scale(0.95)";
+            })
+
+            linkedIn.addEventListener("mouseup", () => {
+                linkedIn.style.transform = "scale(1)";
+            })
+        }
+
+        if (mail){
+            
+            mail.style.animation = "mail-unhover .2s ease-out forwards";
+
+            
+            mail.addEventListener("mouseover", () => {
+                mail.style.animation = "mail-hover .2s ease-out forwards";
+            })
+
+            mail.addEventListener("mouseleave", () => {
+                mail.style.animation = "mail-unhover .2s ease-out forwards";
+            })
+
+            mail.addEventListener("mousedown", () => {
+                mail.style.transform = "scale(0.95)";
+            })
+
+            mail.addEventListener("mouseup", () => {
+                mail.style.transform = "scale(1)";
+            })
+        }
+
+        if (gitHubLink) {
+            gitHubLink.style.animation = "github-unhover .2s ease-out forwards";
+
+            gitHubLink.addEventListener("mouseover", () => {
+                gitHubLink.style.animation = "github-hover .2s ease-out forwards";
+            })
+
+            gitHubLink.addEventListener("mouseleave", () => {
+                gitHubLink.style.animation = "github-unhover .2s ease-out forwards"
+            })
+
+            gitHubLink.addEventListener("mousedown", () => {
+                gitHubLink.style.transform = "scale(0.95)";
+            })
+
+            gitHubLink.addEventListener("mouseup", () => {
+                gitHubLink.style.transform = "scale(1)";
+            })
+        }
     }
+    
 
 // LOCAL STORAGE
 
