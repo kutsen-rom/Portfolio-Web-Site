@@ -175,16 +175,15 @@ a {
 .corner-nav {
     --all:0px;
     --b: var(--secondary-color);
-    -webkit-background:
-    -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
-    -webkit-var(--img,red);
+ 
     background:
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
        var(--img,red);
-       -webkit-background-origin:border-box;
-       background-origin:border-box;
-       -webkit-background-repeat:no-repeat;
-       background-repeat:no-repeat;
+       background:
+       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
+       var(--img,red);
+    background-origin:border-box;
+    background-repeat:no-repeat;
     -webkit-mask:
        linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
        linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
@@ -204,22 +203,20 @@ a {
 .corner-button {
         --all:0px;
         --b: var(--secondary-color); 
-        -webkit-background:
-
-        -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-        -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
-       
-        var(--img,red);
         background:
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
            linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
           
            var(--img,red);
-           -webkit-background-origin:border-box;
-           background-origin:border-box;
-           -webkit-background-repeat:no-repeat;
-           background-repeat:no-repeat;
+           background:
+          
+           -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+           -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
+          
+           var(--img,red);
+        background-origin:border-box;
+        background-repeat:no-repeat;
         -webkit-mask:
            linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
            linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
@@ -239,22 +236,21 @@ a {
   .corner-box {
     --all:0px;
     --b:var(--secondary-color);
-    -webkit-background:
-    -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-    -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
-    -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
-    -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
+    
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       -webkit-background-origin:border-box;
-       background-origin:border-box;
-       -webkit-background-repeat:no-repeat;
-       background-repeat:no-repeat;
+       background:
+       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
+       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
+       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
+       var(--img,var(--main-color));
+    background-origin:border-box;
+    background-repeat:no-repeat;
     -webkit-mask:
        linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
        linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
@@ -274,27 +270,26 @@ a {
   .corner-box-projects {
     --all:0px;
     --b:var(--secondary-color);
-    -webkit-background:
-    -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-    -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-    -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
-    -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
+    
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       -webkit-background-origin:border-box;
-       background-origin:border-box;
-       -webkit-background-repeat:no-repeat;
-       background-repeat:no-repeat;
+       background:
+       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
+       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
+       var(--img,var(--main-color));
+    background-origin:border-box;
+    background-repeat:no-repeat;
     -webkit-mask:
-    -webkit-linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
-    -webkit-linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
-    -webkit-linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
-    -webkit-linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
        linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
        linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
@@ -309,22 +304,22 @@ a {
   .corner-box-project {
     --all:0px;
     --b:var(--secondary-color);
-    -webkit-background:
-    -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-    -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-    -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-    -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-    var(--img,var(--main-color));
+    
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       -webkit-background-origin:border-box;
-       background-origin:border-box;
-       -webkit-background-repeat:no-repeat;
-       background-repeat:no-repeat;
+       background:
+       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
+       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
+       var(--img,var(--main-color));
+    
+    background-origin:border-box;
+    background-repeat:no-repeat;
     -webkit-mask:
        linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
        linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
@@ -344,21 +339,20 @@ a {
   .corner-box-menu {
     --all:0px;
     /* --b:var(--main-color); */
-    -webkit-background:
-    -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-    -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-    -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-    -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-    var(--img,var(--main-color));
+
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       -webkit-background-origin:border-box;
+       background:
+       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
+       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
+       var(--img,var(--main-color));
     background-origin:border-box;
-    -webkit-background-repeat:no-repeat;
     background-repeat:no-repeat;
     -webkit-mask:
        linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
