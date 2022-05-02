@@ -179,9 +179,6 @@ a {
     background:
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
        var(--img,red);
-       background:
-       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
-       var(--img,red);
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
@@ -207,12 +204,6 @@ a {
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
            linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
-          
-           var(--img,red);
-           background:
-          
-           -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-           -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
           
            var(--img,red);
         background-origin:border-box;
@@ -243,12 +234,6 @@ a {
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       background:
-       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
-       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
-       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
@@ -276,12 +261,6 @@ a {
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
-       background:
-       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
-       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
@@ -311,13 +290,6 @@ a {
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
-       background:
-       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
-    
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
@@ -345,12 +317,6 @@ a {
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,var(--main-color));
-       background:
-       -webkit-linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-       -webkit-linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-       -webkit-linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-       -webkit-linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
        var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
