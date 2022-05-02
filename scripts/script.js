@@ -1208,6 +1208,187 @@ const switchToLightTheme = () => {
     }
     
 
+    const switchToGoldTheme = () => {
+        document.documentElement.setAttribute("data-theme", "gold")
+        document.getElementById("switch-title").innerHTML = "gold";
+        document.querySelector("body").style.backgroundImage = "url(./resources/images/gold-theme/background-gold.svg)";
+        switchButton.style.backgroundImage = "url(./resources/images/gold-theme/switch-gold.svg)"
+        document.getElementsByClassName("logo-title")[0].style.backgroundImage = "url(./resources/images/gold-theme/logo-title-gold.svg)"
+
+
+        // MENU BUTTON
+
+        document.getElementsByClassName("hamburger")[0].style.backgroundImage = "url(./resources/images/gold-theme/hamburger-gold.svg)";
+
+          // THEME SWITCH
+
+    switchButton.addEventListener("mouseover", () => {
+        switchButton.style.animation = "switch-change-gold 0.3s forwards";
+        switchButton.style.cursor = "pointer";
+    })
+    
+    switchButton.addEventListener("mouseleave", () => {
+        switchButton.style.animation = "switch-unchange-gold 0.3s forwards";
+    })
+    switchButton.addEventListener("mousedown", () => {
+        switchButton.style.animation = "switch-rotate-gold 0.3s forwards";
+    })
+   
+    switchButton.addEventListener("animationend", () => {
+        if (switchButton.style.animation === "0.3s ease 0s 1 normal forwards running switch-rotate"){
+            switchButton.style.animation = "";
+        }
+    })
+
+    switchButton.style.animation = "switch-unchange-gold 0.3s forwards"
+    
+
+    // LEFT RIGHT ARROWS ANIMATION
+
+        // LEFT ARROW
+
+
+        if (leftArrow) {
+            leftArrow.style.animation = "left-arrow-unhover-gold 0.3s forwards";
+
+            leftArrow.addEventListener("mouseover", () => {
+                leftArrow.style.animation = "left-arrow-hover-gold 0.3s forwards";
+            })
+
+            leftArrow.addEventListener("mouseleave", () => {
+                leftArrow.style.animation = "left-arrow-unhover-gold 0.3s forwards";
+            })
+
+            leftArrow.addEventListener("mousedown", () => {
+                leftArrow.style.animation = "left-arrow-active-gold 0.2s forwards";
+            })
+
+            leftArrow.addEventListener("animationend", () => {
+                if (leftArrow.style.animation === "0.2s ease 0s 1 normal forwards running left-arrow-active-gold"){
+                    leftArrow.style.animation = "left-arrow-hover-gold 0.3s forwards";
+            }
+            })
+        }
+
+
+        // RIGHT ARROW
+
+        if (rightArrow) {
+            rightArrow.style.animation = "right-arrow-unhover-gold 0.3s forwards";
+
+            rightArrow.addEventListener("mouseover", () => {
+                rightArrow.style.animation = "right-arrow-hover-gold 0.3s forwards";
+            })
+
+            rightArrow.addEventListener("mouseleave", () => {
+                rightArrow.style.animation = "right-arrow-unhover-gold 0.3s forwards";
+            })
+
+            rightArrow.addEventListener("mousedown", () => {
+                rightArrow.style.animation = "right-arrow-active-gold 0.2s forwards";
+            })
+
+            rightArrow.addEventListener("animationend", () => {
+                if (rightArrow.style.animation === "0.2s ease 0s 1 normal forwards running right-arrow-active-gold"){
+                    rightArrow.style.animation = "right-arrow-hover-gold 0.3s forwards";
+            }
+            })
+        }
+
+        
+            // CHANGE SKILLS PICS 
+    
+            if (document.getElementsByClassName("sk-html")[0]){
+            document.getElementsByClassName("sk-html")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-html5-gold.svg)"
+         }       
+            if (document.getElementsByClassName("sk-css")[0]){
+            document.getElementsByClassName("sk-css")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-css3-gold.svg)"
+          }
+            if (document.getElementsByClassName("sk-js")[0]){
+            document.getElementsByClassName("sk-js")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-js-gold.svg)"
+         }
+            if (document.getElementsByClassName("sk-node")[0]){
+            document.getElementsByClassName("sk-node")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-node-gold.svg)"
+         }
+            if (document.getElementsByClassName("sk-git")[0]){
+            document.getElementsByClassName("sk-git")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-git-gold.svg)"
+         }
+            if (document.getElementsByClassName("sk-github")[0]){
+            document.getElementsByClassName("sk-github")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-github-gold.svg)"
+         }
+            if (document.getElementsByClassName("sk-chrome")[0]){
+            document.getElementsByClassName("sk-chrome")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-chrome-gold.svg)"
+         }
+            if (document.getElementsByClassName("sk-terminal")[0]){
+            document.getElementsByClassName("sk-terminal")[0].style.backgroundImage = "url(./resources/images/gold-theme/sk-terminal-gold.svg)"
+        }
+
+        // CONTACT PICS 
+
+        if (linkedIn){
+            linkedIn.style.backgroundImage = "url(./resources/images/gold-theme/linked-in-gold.svg)";
+            linkedIn.style.animation = "linked-in-gold-unhover .2s ease-out forwards";
+
+            linkedIn.addEventListener("mouseover", () => {
+                linkedIn.style.animation = "linked-in-gold-hover .2s ease-out forwards";
+            })
+
+            linkedIn.addEventListener("mouseleave", () => {
+                linkedIn.style.animation = "linked-in-gold-unhover .2s ease-out forwards";
+            })
+
+            linkedIn.addEventListener("mousedown", () => {
+                linkedIn.style.transform = "scale(0.95)";
+            })
+
+            linkedIn.addEventListener("mouseup", () => {
+                linkedIn.style.transform = "scale(1)";
+            })
+        }
+
+        if (mail){
+            mail.style.backgroundImage = "url(./resources/images/gold-theme/mail-gold.svg)";
+            mail.style.animation = "mail-gold-unhover .2s ease-out forwards";
+
+            
+            mail.addEventListener("mouseover", () => {
+                mail.style.animation = "mail-gold-hover .2s ease-out forwards";
+            })
+
+            mail.addEventListener("mouseleave", () => {
+                mail.style.animation = "mail-gold-unhover .2s ease-out forwards";
+            })
+
+            mail.addEventListener("mousedown", () => {
+                mail.style.transform = "scale(0.95)";
+            })
+
+            mail.addEventListener("mouseup", () => {
+                mail.style.transform = "scale(1)";
+            })
+        }
+
+        if (gitHubLink) {
+            gitHubLink.style.animation = "github-gold-unhover .2s ease-out forwards";
+
+            gitHubLink.addEventListener("mouseover", () => {
+                gitHubLink.style.animation = "github-gold-hover .2s ease-out forwards";
+            })
+
+            gitHubLink.addEventListener("mouseleave", () => {
+                gitHubLink.style.animation = "github-gold-unhover .2s ease-out forwards"
+            })
+
+            gitHubLink.addEventListener("mousedown", () => {
+                gitHubLink.style.transform = "scale(0.95)";
+            })
+
+            gitHubLink.addEventListener("mouseup", () => {
+                gitHubLink.style.transform = "scale(1)";
+            })
+        }
+    }
+
 // LOCAL STORAGE
 
 
@@ -1219,19 +1400,25 @@ const switchToLightTheme = () => {
             switchToLightTheme();
             
         } else if (theme === "light") {
+            localStorage.setItem("data-theme" ,"gold")
+            switchToGoldTheme();
+            theme = "gold";
+        }
+        else if (theme === "gold") {
             localStorage.setItem("data-theme" ,"dark")
             switchToDarkTheme();
             theme = "dark";
-          
-        }
-    })
+    }})
 
     window.onload = () => {
         if (theme === "dark"){
         switchToDarkTheme();
      } else if (theme === "light"){
         switchToLightTheme();
-}    }
+    }   else if (theme === "gold"){
+    switchToGoldTheme();
+} 
+ }
 
 
 

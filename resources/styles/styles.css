@@ -11,6 +11,11 @@ html[data-theme="light"] {
     --secondary-color: black;
 }
 
+html[data-theme="gold"] {
+    --main-color: black;
+    --secondary-color: #DBA828;
+}
+
 html,
 body {
   height: 100%;
@@ -797,6 +802,19 @@ justify-content: center;
         }
     }
 
+    @keyframes switch-rotate-gold {
+        0% {
+            background-image: url(../images/gold-theme/switch-gold-hover.svg);
+        }
+        
+            100% {
+                background-image: url(../images/gold-theme/switch-gold-hover.svg);
+                transform: rotate(240deg);
+                transform-origin: 50% 66%;
+                margin-bottom: 7px;
+            }
+        }
+
 @keyframes switch-rotate-2 {
     0% {
         background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
@@ -850,6 +868,25 @@ justify-content: center;
     }
 }
 
+@keyframes switch-change-gold {
+    0% {
+        background-image: url(../images/gold-theme/switch-gold.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/switch-gold-hover.svg);
+    }
+}
+
+@keyframes switch-unchange-gold {
+    0% {
+        background-image: url(../images/gold-theme/switch-gold-hover.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/switch-gold.svg);
+    }
+}
 @keyframes navis {
     0% {
         background-color: var(--secondary-color);
@@ -1169,6 +1206,87 @@ justify-content: center;
     }
 }
 
+@keyframes left-arrow-hover-gold {
+    0% {
+        background-image: url(../images/gold-theme/left-arrow-gold.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
+        
+    }
+}
+
+@keyframes left-arrow-unhover-gold {
+    0% {
+        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/left-arrow-gold.svg);
+        
+    }
+}
+
+@keyframes left-arrow-active-gold {
+    0% {
+        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
+        
+       position: relative;
+        left: 0%;
+    }
+
+    50% {
+        left: -2%;
+    }
+    
+    100% {
+       position: relative;
+       left: 0.1%;
+       background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
+    }
+}
+
+@keyframes right-arrow-hover-gold {
+    0% {
+        background-image: url(../images/gold-theme/right-arrow-gold.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
+     
+    }
+}
+
+@keyframes right-arrow-unhover-gold {
+    0% {
+        background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
+    }
+
+    100% {
+        background-image: url(../images/gold-theme/right-arrow-gold.svg);
+        
+    }
+}
+
+@keyframes right-arrow-active-gold {
+    0% {
+       background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
+       position: relative;
+        right: 0%;
+    }
+
+    50% {
+        right: -2%; 
+    }
+    
+    100% {
+       position: relative;
+       right: 0.01%;
+       background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
+    }
+}
+
 @keyframes skills-accent {
     0% {
         border: 2px solid transparent;
@@ -1314,6 +1432,66 @@ justify-content: center;
 
         100% {
             background-image: url(../images/light-theme/sk-github-light.svg);
+        }
+    }
+
+    @keyframes linked-in-gold-hover {
+        0% {
+            background-image: url(../images/gold-theme/linked-in-gold.svg)
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/linked-in-hover-gold.svg);
+        }
+    }
+
+    @keyframes linked-in-gold-unhover {
+        0% {
+            background-image: url(../images/gold-theme/linked-in-hover-gold.svg);
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/linked-in-gold.svg);
+        }
+    }
+
+    @keyframes mail-gold-hover {
+        0% {
+            background-image: url(../images/gold-theme/mail-gold.svg)
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/mail-hover-gold.svg);
+        }
+    }
+
+    @keyframes mail-gold-unhover {
+        0% {
+            background-image: url(../images/gold-theme/mail-hover-gold.svg);
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/mail-gold.svg);
+        }
+    }
+
+    @keyframes github-gold-hover {
+        0% {
+            background-image: url(../images/gold-theme/sk-github-gold.svg);
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/github-outline-gold.svg);
+        }
+    }
+
+    @keyframes github-gold-unhover {
+        0% {
+            background-image: url(../images/gold-theme/github-outline-gold.svg);
+        }
+
+        100% {
+            background-image: url(../images/gold-theme/sk-github-gold.svg);
         }
     }
 /*      MEDIA QUERIES      */
