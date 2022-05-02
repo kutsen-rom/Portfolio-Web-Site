@@ -356,6 +356,7 @@ let theme = localStorage.getItem("data-theme");
 if (!theme) {
     localStorage.setItem("data-theme",  "dark")
 }
+ 
 
 
 //  SWITCH TO LIGHT THEME
