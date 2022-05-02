@@ -865,16 +865,12 @@ const switchToLightTheme = () => {
          // THEME SWITCH
 
         switchButton.addEventListener("mouseover", () => {
-            // switchButton.style.animation = "switch-change-light 0.3s forwards";
+            switchButton.style.animation = "switch-change-light 0.3s forwards";
             switchButton.style.cursor = "pointer";
-            switchButton.classList.remove('switch-unchange-light')
-            switchButton.classList.add("switch-change-light")
         })
         
         switchButton.addEventListener("mouseleave", () => {
-            // switchButton.style.animation = "switch-unchange-light 0.3s forwards";
-            switchButton.classList.remove('switch-change-light')
-            switchButton.classList.add("switch-unchange-light")
+            switchButton.style.animation = "switch-unchange-light 0.3s forwards";
         })
         switchButton.addEventListener("mousedown", () => {
             switchButton.style.animation = "switch-rotate-light 0.3s forwards";

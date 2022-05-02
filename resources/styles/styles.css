@@ -50,8 +50,6 @@ body {
     border-right: 2px solid var(--secondary-color);
 }
 
-
-
 body {
     /* background-attachment: fixed; */
     font-family: 'Major Mono Display', monospace;
@@ -754,43 +752,7 @@ justify-content: center;
     background-image: url(../images/mail-classic.svg);
 }
 
-/*     ANIMATION CLASSES     (FOR FIREFOX)      */
-
-.switch-change-light {
-    animation: switch-change-light 0.3s forwards;
-    -webkit-animation: switch-change-light 0.3s forwards;
-    -moz-animation: switch-change-light 0.3s forwards;
-}
-
-.switch-unchange-light {
-    animation: switch-unchange-light 0.3s forwards;
-    -webkit-animation: switch-unchange-light 0.3s forwards;
-    -moz-animation: switch-unchange-light 0.3s forwards;
-}
-
 /*     ANIMATION     */
-@-webkit-keyframes background {
-    0% {
-        background-position: center;
-    }
-
-    25% {
-        background-position: right;
-    }
-
-    50% {
-        background-position: center;
-    }
-
-    75% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: center;
-    }
-}
-
 
 @keyframes background {
     0% {
@@ -814,7 +776,7 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes switch-rotate {
+@keyframes switch-rotate {
 0% {
     background-image: url(../images/switch-hover-04.svg);
 }
@@ -827,20 +789,7 @@ justify-content: center;
     }
 }
 
-@keyframes switch-rotate {
-    0% {
-        background-image: url(../images/switch-hover-04.svg);
-    }
-    
-        100% {
-            background-image: url(../images/switch-hover-04.svg);
-            transform: rotate(240deg);
-            transform-origin: 50% 66%;
-            margin-bottom: 7px;
-        }
-    }
-
-@-webkit-keyframes switch-rotate-light {
+@keyframes switch-rotate-light {
     0% {
         background-image: url(../images/light-theme/switch-light-hover-39.svg);
     }
@@ -853,21 +802,7 @@ justify-content: center;
         }
     }
 
-    
-@keyframes switch-rotate-light {
-        0% {
-            background-image: url(../images/light-theme/switch-light-hover-39.svg);
-        }
-        
-            100% {
-                background-image: url(../images/light-theme/switch-light-hover-39.svg);
-                transform: rotate(240deg);
-                transform-origin: 50% 66%;
-                margin-bottom: 7px;
-            }
-        }
-
-@-webkit-keyframes switch-rotate-gold {
+    @keyframes switch-rotate-gold {
         0% {
             background-image: url(../images/gold-theme/switch-gold-hover.svg);
         }
@@ -880,20 +815,7 @@ justify-content: center;
             }
         }
 
-@keyframes switch-rotate-gold {
-            0% {
-                background-image: url(../images/gold-theme/switch-gold-hover.svg);
-            }
-            
-                100% {
-                    background-image: url(../images/gold-theme/switch-gold-hover.svg);
-                    transform: rotate(240deg);
-                    transform-origin: 50% 66%;
-                    margin-bottom: 7px;
-                }
-            }
-
-@-webkit-keyframes switch-rotate-2 {
+@keyframes switch-rotate-2 {
     0% {
         background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
     }
@@ -906,39 +828,6 @@ justify-content: center;
         }
     }
 
-@keyframes switch-rotate-2 {
-        0% {
-            background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
-        }
-        
-            100% {
-                background-image: url(../images/portfolio-classic-triangle-hover-05-05.svg);
-                transform: rotate(240deg);
-                transform-origin: 50% 66%;
-                margin-bottom: 7px; 
-            }
-        }
-
-    @-moz-keyframes switch-unchange {
-            0% {
-                background-image: url(../images/switch-hover-04.svg);
-            }
-        
-            100% {
-                background-image: url(../images/portfolio-triangle-05.svg);
-            }
-        }
-
-        @-webkit-keyframes switch-unchange {
-    0% {
-        background-image: url(../images/switch-hover-04.svg);
-    }
-
-    100% {
-        background-image: url(../images/portfolio-triangle-05.svg);
-    }
-}
-
 @keyframes switch-unchange {
     0% {
         background-image: url(../images/switch-hover-04.svg);
@@ -946,26 +835,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/portfolio-triangle-05.svg);
-    }
-}
-
-@-moz-keyframes switch-change {
-    0% {
-        background-image: url(../images/portfolio-triangle-05.svg);
-    }
-
-    100% {
-        background-image: url(../images/switch-hover-04.svg);
-    }
-}
-
-@-webkit-keyframes switch-change {
-    0% {
-        background-image: url(../images/portfolio-triangle-05.svg);
-    }
-
-    100% {
-        background-image: url(../images/switch-hover-04.svg);
     }
 }
 
@@ -979,26 +848,6 @@ justify-content: center;
     }
 }
 
-@-moz-keyframes switch-change-light {
-    0% {
-        background-image: url(../images/light-theme/switch-light-37.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-theme/switch-light-hover-39.svg);
-    }
-}
-
-@-webkit-keyframes switch-change-light {
-    0% {
-        background-image: url(../images/light-theme/switch-light-37.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-theme/switch-light-hover-39.svg);
-    }
-}
-
 @keyframes switch-change-light {
     0% {
         background-image: url(../images/light-theme/switch-light-37.svg);
@@ -1006,26 +855,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/light-theme/switch-light-hover-39.svg);
-    }
-}
-
-@-moz-keyframes switch-unchange-light {
-    0% {
-        background-image: url(../images/light-theme/switch-light-hover-39.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-theme/switch-light-37.svg);
-    }
-}
-
-@-webkit-keyframes switch-unchange-light {
-    0% {
-        background-image: url(../images/light-theme/switch-light-hover-39.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-theme/switch-light-37.svg);
     }
 }
 
@@ -1039,16 +868,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes switch-change-gold {
-    0% {
-        background-image: url(../images/gold-theme/switch-gold.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/switch-gold-hover.svg);
-    }
-}
-
 @keyframes switch-change-gold {
     0% {
         background-image: url(../images/gold-theme/switch-gold.svg);
@@ -1056,16 +875,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/gold-theme/switch-gold-hover.svg);
-    }
-}
-
-@-webkit-keyframes switch-unchange-gold {
-    0% {
-        background-image: url(../images/gold-theme/switch-gold-hover.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/switch-gold.svg);
     }
 }
 
@@ -1078,20 +887,6 @@ justify-content: center;
         background-image: url(../images/gold-theme/switch-gold.svg);
     }
 }
-
-@-webkit-keyframes navis {
-    0% {
-        background-color: var(--secondary-color);
-        border: 2px solid var(--secondary-color);
-        color: var(--main-color);
-    }
-    100% {
-        background-color: var(--main-color);
-        border: 2px solid var(--main-color);
-        color: var(--secondary-color);
-    }
-}
-
 @keyframes navis {
     0% {
         background-color: var(--secondary-color);
@@ -1104,36 +899,6 @@ justify-content: center;
         color: var(--secondary-color);
     }
 }
-
-@-webkit-keyframes uncontacts {
-    0% {
-        background-color: var(--main-color);
-        border: 2px solid var(--secondary-color);
-        color: var(--secondary-color);
-        --all:0px;
-        --b: var(--secondary-color);
-
-        background:
-          
-           linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
-           linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-          
-           var(--img,var(--main-color));
-        background-origin:border-box;
-        background-repeat:no-repeat;
-        -webkit-mask:
-           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
-           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
-           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
-           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
-         -webkit-mask-size:50.5% 50.5%;
-         -webkit-mask-repeat:no-repeat;
-    }
-    
-    100% {
-        background-color: var(--secondary-color);
-        color: var(--main-color);
-}}
 
 @keyframes uncontacts {
     0% {
@@ -1208,18 +973,6 @@ justify-content: center;
         color: white;
 }} */
 
-@-webkit-keyframes navi {
-    0% {
-        background-color: var(--secondary-color);
-        outline: 2px solid var(--main-color);
-        color: var(--main-color);
-    }
-    100% {
-        background-color: var(--main-color);
-        color: var(--secondary-color);
-    }
-}
-
 @keyframes navi {
     0% {
         background-color: var(--secondary-color);
@@ -1229,19 +982,6 @@ justify-content: center;
     100% {
         background-color: var(--main-color);
         color: var(--secondary-color);
-    }
-}
-
-@-webkit-keyframes uncontact {
-    0% {
-        background-color: var(--main-color);
-        outline: 2px solid var(--secondary-color);
-        color: var(--secondary-color);
-    }
-    
-    100% {
-        background-color: var(--secondary-color);
-        color: var(--main-color);
     }
 }
 
@@ -1255,14 +995,6 @@ justify-content: center;
     100% {
         background-color: var(--secondary-color);
         color: var(--main-color);
-    }
-}
-
-@-webkit-keyframes contact {
-    100% {
-        background-color: var(--main-color);
-        outline: 2px solid var(--secondary-color);
-        color: var(--secondary-color);
     }
 }
 
@@ -1295,19 +1027,6 @@ justify-content: center;
     }
 } */
 
-@-webkit-keyframes diss {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes diss {
     0% {
         opacity: 1;
@@ -1320,17 +1039,6 @@ justify-content: center;
         opacity: 1;
     }
 }
-
-@-webkit-keyframes pulsate {
-    25% {
-        transform: scale(1.25);
-    }
-
-    50% {
-        transform: scale(1.0);
-    }
-}
-
 @keyframes pulsate {
     25% {
         transform: scale(1.25);
@@ -1338,16 +1046,6 @@ justify-content: center;
 
     50% {
         transform: scale(1.0);
-    }
-}
-
-@-webkit-keyframes left-arrow-hover {
-    0% {
-        background-image: url(../images/arrow-classic-left.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-arrow-left.svg);
     }
 }
 
@@ -1361,16 +1059,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes left-arrow-unhover {
-    0% {
-        background-image: url(../images/light-arrow-left.svg);
-    }
-
-    100% {
-        background-image: url(../images/arrow-classic-left.svg);
-    }
-}
-
 @keyframes left-arrow-unhover {
     0% {
         background-image: url(../images/light-arrow-left.svg);
@@ -1378,24 +1066,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/arrow-classic-left.svg);
-    }
-}
-
-@-webkit-keyframes left-arrow-active {
-    0% {
-        background-image: url(../images/light-arrow-left.svg);
-       position: relative;
-        left: 0%;
-    }
-
-    50% {
-        left: -2%;
-    }
-    
-    100% {
-       position: relative;
-       left: 0.1%;
-       background-image: url(../images/arrow-classic-left.svg);
     }
 }
 
@@ -1417,16 +1087,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes right-arrow-hover {
-    0% {
-        background-image: url(../images/arrow-classic-right.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-arrow-right.svg);
-    }
-}
-
 @keyframes right-arrow-hover {
     0% {
         background-image: url(../images/arrow-classic-right.svg);
@@ -1437,16 +1097,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes right-arrow-unhover {
-    0% {
-        background-image: url(../images/light-arrow-right.svg);
-    }
-
-    100% {
-        background-image: url(../images/arrow-classic-right.svg);
-    }
-}
-
 @keyframes right-arrow-unhover {
     0% {
         background-image: url(../images/light-arrow-right.svg);
@@ -1454,24 +1104,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/arrow-classic-right.svg);
-    }
-}
-
-@-webkit-keyframes right-arrow-active {
-    0% {
-        background-image: url(../images/light-arrow-right.svg);
-       position: relative;
-        right: 0%;
-    }
-
-    50% {
-        right: -2%; 
-    }
-    
-    100% {
-       position: relative;
-       right: 0.01%;
-       background-image: url(../images/arrow-classic-right.svg);
     }
 }
 
@@ -1493,17 +1125,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes left-arrow-hover-light {
-    0% {
-        background-image: url(../images/light-arrow-left.svg);
-    }
-
-    100% {
-        background-image: url(../images/arrow-classic-left.svg);
-        
-    }
-}
-
 @keyframes left-arrow-hover-light {
     0% {
         background-image: url(../images/light-arrow-left.svg);
@@ -1511,17 +1132,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/arrow-classic-left.svg);
-        
-    }
-}
-
-@-webkit-keyframes left-arrow-unhover-light {
-    0% {
-        background-image: url(../images/arrow-classic-left.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-arrow-left.svg);
         
     }
 }
@@ -1534,25 +1144,6 @@ justify-content: center;
     100% {
         background-image: url(../images/light-arrow-left.svg);
         
-    }
-}
-
-@-webkit-keyframes left-arrow-active-light {
-    0% {
-        background-image: url(../images/arrow-classic-left.svg);
-        
-       position: relative;
-        left: 0%;
-    }
-
-    50% {
-        left: -2%;
-    }
-    
-    100% {
-       position: relative;
-       left: 0.1%;
-       background-image: url(../images/light-arrow-left.svg);
     }
 }
 
@@ -1575,17 +1166,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes right-arrow-hover-light {
-    0% {
-        background-image: url(../images/light-arrow-right.svg);
-    }
-
-    100% {
-        background-image: url(../images/arrow-classic-right.svg);
-     
-    }
-}
-
 @keyframes right-arrow-hover-light {
     0% {
         background-image: url(../images/light-arrow-right.svg);
@@ -1593,17 +1173,7 @@ justify-content: center;
 
     100% {
         background-image: url(../images/arrow-classic-right.svg);
-    }
-}
-
-@-webkit-keyframes right-arrow-unhover-light {
-    0% {
-        background-image: url(../images/arrow-classic-right.svg);
-    }
-
-    100% {
-        background-image: url(../images/light-arrow-right.svg);
-        
+     
     }
 }
 
@@ -1615,24 +1185,6 @@ justify-content: center;
     100% {
         background-image: url(../images/light-arrow-right.svg);
         
-    }
-}
-
-@-webkit-keyframes right-arrow-active-light {
-    0% {
-       background-image: url(../images/arrow-classic-right.svg);
-       position: relative;
-        right: 0%;
-    }
-
-    50% {
-        right: -2%; 
-    }
-    
-    100% {
-       position: relative;
-       right: 0.01%;
-       background-image: url(../images/light-arrow-right.svg);
     }
 }
 
@@ -1654,17 +1206,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes left-arrow-hover-gold {
-    0% {
-        background-image: url(../images/gold-theme/left-arrow-gold.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
-        
-    }
-}
-
 @keyframes left-arrow-hover-gold {
     0% {
         background-image: url(../images/gold-theme/left-arrow-gold.svg);
@@ -1672,17 +1213,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
-        
-    }
-}
-
-@-webkit-keyframes left-arrow-unhover-gold {
-    0% {
-        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/left-arrow-gold.svg);
         
     }
 }
@@ -1695,25 +1225,6 @@ justify-content: center;
     100% {
         background-image: url(../images/gold-theme/left-arrow-gold.svg);
         
-    }
-}
-
-@-webkit-keyframes left-arrow-active-gold {
-    0% {
-        background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
-        
-       position: relative;
-        left: 0%;
-    }
-
-    50% {
-        left: -2%;
-    }
-    
-    100% {
-       position: relative;
-       left: 0.1%;
-       background-image: url(../images/gold-theme/left-arrow-hover-gold.svg);
     }
 }
 
@@ -1736,17 +1247,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes right-arrow-hover-gold {
-    0% {
-        background-image: url(../images/gold-theme/right-arrow-gold.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
-     
-    }
-}
-
 @keyframes right-arrow-hover-gold {
     0% {
         background-image: url(../images/gold-theme/right-arrow-gold.svg);
@@ -1758,17 +1258,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes right-arrow-unhover-gold {
-    0% {
-        background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
-    }
-
-    100% {
-        background-image: url(../images/gold-theme/right-arrow-gold.svg);
-        
-    }
-}
-
 @keyframes right-arrow-unhover-gold {
     0% {
         background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
@@ -1777,24 +1266,6 @@ justify-content: center;
     100% {
         background-image: url(../images/gold-theme/right-arrow-gold.svg);
         
-    }
-}
-
-@-webkit-keyframes right-arrow-active-gold {
-    0% {
-       background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
-       position: relative;
-        right: 0%;
-    }
-
-    50% {
-        right: -2%; 
-    }
-    
-    100% {
-       position: relative;
-       right: 0.01%;
-       background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
     }
 }
 
@@ -1813,20 +1284,6 @@ justify-content: center;
        position: relative;
        right: 0.01%;
        background-image: url(../images/gold-theme/right-arrow-hover-gold.svg);
-    }
-}
-
-@-webkit-keyframes skills-accent {
-    0% {
-        border: 2px solid transparent;
-    }
-
-    50% {
-        border: 2px solid var(--secondary-color);
-    }
-
-    100% {
-        border: 2px solid transparent;
     }
 }
 
@@ -1858,16 +1315,6 @@ justify-content: center;
     }
 } */
 
-@-webkit-keyframes linked-in-hover {
-    0% {
-        background-image: url(../images/linkedin-classic.svg);
-    }
-
-    100% {
-        background-image: url(../images/linked-in-hover.svg);
-    }
-}
-
 @keyframes linked-in-hover {
     0% {
         background-image: url(../images/linkedin-classic.svg);
@@ -1875,16 +1322,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/linked-in-hover.svg);
-    }
-}
-
-@-webkit-keyframes linked-in-unhover {
-    0% {
-        background-image: url(../images/linked-in-hover.svg);
-    }
-
-    100% {
-        background-image: url(../images/linkedin-classic.svg);
     }
 }
 
@@ -1898,16 +1335,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes mail-hover {
-    0% {
-        background-image: url(../images/mail-classic.svg);
-    }
-
-    100% {
-        background-image: url(../images/mail-hover.svg)
-    }
-}
-
 @keyframes mail-hover {
     0% {
         background-image: url(../images/mail-classic.svg);
@@ -1915,16 +1342,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/mail-hover.svg)
-    }
-}
-
-@-webkit-keyframes mail-unhover {
-    0% {
-        background-image: url(../images/mail-hover.svg);
-    }
-
-    100% {
-        background-image: url(../images/mail-classic.svg);
     }
 }
 
@@ -1938,16 +1355,6 @@ justify-content: center;
     }
 }
 
-@-webkit-keyframes github-hover {
-    0% {
-        background-image: url(../images/skill-18.svg);
-    }
-
-    100% {
-        background-image: url(../images/github-outline.svg);
-    }
-}
-
 @keyframes github-hover {
     0% {
         background-image: url(../images/skill-18.svg);
@@ -1955,16 +1362,6 @@ justify-content: center;
 
     100% {
         background-image: url(../images/github-outline.svg);
-    }
-}
-
-@-webkit-keyframes github-unhover {
-    0% {
-        background-image: url(../images/github-outline.svg);
-    }
-
-    100% {
-        background-image: url(../images/skill-18.svg);
     }
 }
 
@@ -1978,16 +1375,6 @@ justify-content: center;
     }
 }
 
-    @-webkit-keyframes linked-in-light-hover {
-        0% {
-            background-image: url(../images/light-theme/linked-in-light.svg)
-        }
-
-        100% {
-            background-image: url(../images/light-theme/linked-in-hover-light.svg);
-        }
-    }
-
     @keyframes linked-in-light-hover {
         0% {
             background-image: url(../images/light-theme/linked-in-light.svg)
@@ -1995,16 +1382,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/light-theme/linked-in-hover-light.svg);
-        }
-    }
-
-    @-webkit-keyframes linked-in-light-unhover {
-        0% {
-            background-image: url(../images/light-theme/linked-in-hover-light.svg);
-        }
-
-        100% {
-            background-image: url(../images/light-theme/linked-in-light.svg);
         }
     }
 
@@ -2018,16 +1395,6 @@ justify-content: center;
         }
     }
 
-    @-webkit-keyframes mail-light-hover {
-        0% {
-            background-image: url(../images/light-theme/mail-light.svg)
-        }
-
-        100% {
-            background-image: url(../images/light-theme/mail-hover-light.svg);
-        }
-    }
-
     @keyframes mail-light-hover {
         0% {
             background-image: url(../images/light-theme/mail-light.svg)
@@ -2035,16 +1402,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/light-theme/mail-hover-light.svg);
-        }
-    }
-
-    @-webkit-keyframes mail-light-unhover {
-        0% {
-            background-image: url(../images/light-theme/mail-hover-light.svg);
-        }
-
-        100% {
-            background-image: url(../images/light-theme/mail-light.svg);
         }
     }
 
@@ -2058,16 +1415,6 @@ justify-content: center;
         }
     }
 
-    @-webkit-keyframes github-light-hover {
-        0% {
-            background-image: url(../images/light-theme/sk-github-light.svg);
-        }
-
-        100% {
-            background-image: url(../images/light-theme/github-outline-light.svg);
-        }
-    }
-
     @keyframes github-light-hover {
         0% {
             background-image: url(../images/light-theme/sk-github-light.svg);
@@ -2075,16 +1422,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/light-theme/github-outline-light.svg);
-        }
-    }
-
-    @-webkit-keyframes github-light-unhover {
-        0% {
-            background-image: url(../images/light-theme/github-outline-light.svg);
-        }
-
-        100% {
-            background-image: url(../images/light-theme/sk-github-light.svg);
         }
     }
 
@@ -2098,16 +1435,6 @@ justify-content: center;
         }
     }
 
-    @-webkit-keyframes linked-in-gold-hover {
-        0% {
-            background-image: url(../images/gold-theme/linked-in-gold.svg)
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/linked-in-hover-gold.svg);
-        }
-    }
-
     @keyframes linked-in-gold-hover {
         0% {
             background-image: url(../images/gold-theme/linked-in-gold.svg)
@@ -2115,16 +1442,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/gold-theme/linked-in-hover-gold.svg);
-        }
-    }
-
-    @-webkit-keyframes linked-in-gold-unhover {
-        0% {
-            background-image: url(../images/gold-theme/linked-in-hover-gold.svg);
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/linked-in-gold.svg);
         }
     }
 
@@ -2138,16 +1455,6 @@ justify-content: center;
         }
     }
 
-    @-webkit-keyframes mail-gold-hover {
-        0% {
-            background-image: url(../images/gold-theme/mail-gold.svg)
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/mail-hover-gold.svg);
-        }
-    }
-
     @keyframes mail-gold-hover {
         0% {
             background-image: url(../images/gold-theme/mail-gold.svg)
@@ -2155,16 +1462,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/gold-theme/mail-hover-gold.svg);
-        }
-    }
-
-    @-webkit-keyframes mail-gold-unhover {
-        0% {
-            background-image: url(../images/gold-theme/mail-hover-gold.svg);
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/mail-gold.svg);
         }
     }
 
@@ -2176,16 +1473,6 @@ justify-content: center;
         100% {
             background-image: url(../images/gold-theme/mail-gold.svg);
         }
-    }   
-
-    @-webkit-keyframes github-gold-hover {
-        0% {
-            background-image: url(../images/gold-theme/sk-github-gold.svg);
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/github-outline-gold.svg);
-        }
     }
 
     @keyframes github-gold-hover {
@@ -2195,16 +1482,6 @@ justify-content: center;
 
         100% {
             background-image: url(../images/gold-theme/github-outline-gold.svg);
-        }
-    }
-
-    @-webkit-keyframes github-gold-unhover {
-        0% {
-            background-image: url(../images/gold-theme/github-outline-gold.svg);
-        }
-
-        100% {
-            background-image: url(../images/gold-theme/sk-github-gold.svg);
         }
     }
 
