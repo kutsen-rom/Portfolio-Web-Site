@@ -1144,8 +1144,8 @@ console.log(theme)
 
     checkbox.addEventListener('click', () => {
    
-        console.log(theme || theme === "null")
-        if (theme === "dark" ) {
+        console.log(theme)
+        if (theme === "dark" || theme === "null" ) {
             localStorage.setItem("data-theme", "light")
             theme = "light";
             switchToLightTheme();
