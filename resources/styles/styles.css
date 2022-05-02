@@ -754,6 +754,20 @@ justify-content: center;
     background-image: url(../images/mail-classic.svg);
 }
 
+/*     ANIMATION CLASSES     (FOR FIREFOX)      */
+
+.switch-change-light {
+    animation: switch-switch-change-light 0.3s forwards;
+    -webkit-animation: switch-switch-change-light 0.3s forwards;
+    -moz-animation: switch-switch-change-light 0.3s forwards;
+}
+
+.switch-unchange-light {
+    animation: switch-switch-unchange-light 0.3s forwards;
+    -webkit-animation: switch-switch-unchange-light 0.3s forwards;
+    -moz-animation: switch-switch-unchange-light 0.3s forwards;
+}
+
 /*     ANIMATION     */
 @-webkit-keyframes background {
     0% {
@@ -965,6 +979,16 @@ justify-content: center;
     }
 }
 
+@-moz-keyframes switch-change-light {
+    0% {
+        background-image: url(../images/light-theme/switch-light-37.svg);
+    }
+
+    100% {
+        background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
+}
+
 @-webkit-keyframes switch-change-light {
     0% {
         background-image: url(../images/light-theme/switch-light-37.svg);
@@ -982,6 +1006,16 @@ justify-content: center;
 
     100% {
         background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
+}
+
+@-moz-keyframes switch-unchange-light {
+    0% {
+        background-image: url(../images/light-theme/switch-light-hover-39.svg);
+    }
+
+    100% {
+        background-image: url(../images/light-theme/switch-light-37.svg);
     }
 }
 
