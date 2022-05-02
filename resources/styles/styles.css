@@ -757,15 +757,15 @@ justify-content: center;
 /*     ANIMATION CLASSES     (FOR FIREFOX)      */
 
 .switch-change-light {
-    animation: switch-switch-change-light 0.3s forwards;
-    -webkit-animation: switch-switch-change-light 0.3s forwards;
-    -moz-animation: switch-switch-change-light 0.3s forwards;
+    animation: switch-change-light 0.3s forwards;
+    -webkit-animation: switch-change-light 0.3s forwards;
+    -moz-animation: switch-change-light 0.3s forwards;
 }
 
 .switch-unchange-light {
-    animation: switch-switch-unchange-light 0.3s forwards;
-    -webkit-animation: switch-switch-unchange-light 0.3s forwards;
-    -moz-animation: switch-switch-unchange-light 0.3s forwards;
+    animation: switch-unchange-light 0.3s forwards;
+    -webkit-animation: switch-unchange-light 0.3s forwards;
+    -moz-animation: switch-unchange-light 0.3s forwards;
 }
 
 /*     ANIMATION     */
