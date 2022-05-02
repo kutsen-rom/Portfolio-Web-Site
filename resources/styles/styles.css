@@ -50,24 +50,7 @@ body {
     border-right: 2px solid var(--secondary-color);
 }
 
-::-moz-scrollbar {
-    background-color: var(--main-color);
-}
 
-::-moz-scrollbar-thumb {
-    border: 1px solid var(--secondary-color);
-    border-right: 2px solid var(--secondary-color); 
-}
-
-::-moz-scrollbar-thumb:hover {
-    border: 2px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-}
-
-::-moz-scrollbar-thumb:active {
-    border: 1px solid var(--secondary-color);
-    border-right: 2px solid var(--secondary-color);
-}
 
 body {
     /* background-attachment: fixed; */
@@ -922,7 +905,17 @@ justify-content: center;
             }
         }
 
-@-webkit-keyframes switch-unchange {
+    @-moz-keyframes switch-unchange {
+            0% {
+                background-image: url(../images/switch-hover-04.svg);
+            }
+        
+            100% {
+                background-image: url(../images/portfolio-triangle-05.svg);
+            }
+        }
+
+        @-webkit-keyframes switch-unchange {
     0% {
         background-image: url(../images/switch-hover-04.svg);
     }
@@ -939,6 +932,16 @@ justify-content: center;
 
     100% {
         background-image: url(../images/portfolio-triangle-05.svg);
+    }
+}
+
+@-moz-keyframes switch-change {
+    0% {
+        background-image: url(../images/portfolio-triangle-05.svg);
+    }
+
+    100% {
+        background-image: url(../images/switch-hover-04.svg);
     }
 }
 
