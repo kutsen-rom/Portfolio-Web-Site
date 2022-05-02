@@ -352,8 +352,10 @@ for (let i=0; i<buttons.length; i++) {
 
 let theme = localStorage.getItem("data-theme");
 
-console.log(theme)
 
+if (!theme) {
+    localStorage.setItem("data-theme",  "dark")
+}
 
 
 //  SWITCH TO LIGHT THEME
@@ -1410,7 +1412,7 @@ const switchToLightTheme = () => {
             theme = "dark";
     }})
 
-    window.onload = () => {
+    
         if (theme === "dark"){
         switchToDarkTheme();
      } else if (theme === "light"){
@@ -1418,15 +1420,28 @@ const switchToLightTheme = () => {
     }   else if (theme === "gold"){
     switchToGoldTheme();
 } 
- }
 
 
+// window.onload = () => {}
+
+// click => go to => onpageload playanimation
+
+// if(document.getElementById("skills-button-projects")){
+//     document.getElementById("skills-button-projects").addEventListener("click", () => {
+//     // window.location.href = "./index.html";
+//     window.open("./index.html", "_self");
+//     window.onload = () => {
+//         document.getElementById("skills-panel").style.animation = "skills-accent 2s"
+//     }
+// })
+// }
+
+// // if (window.history.previous.href === "./index.html") {
+// //     console.log("dawdaw")
+// // }
 
 
-
-
-
-
+// console.log(history.back())
 
 
 
