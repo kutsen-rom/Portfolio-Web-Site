@@ -849,7 +849,6 @@ console.log(theme)
 
 
 const switchToLightTheme = () => {
-    
             document.documentElement.setAttribute("data-theme", "light");
             document.getElementById("switch-title").innerHTML = "light";
             document.querySelector("body").style.backgroundImage = "url(./resources/images/light-theme/background-light.svg)";
@@ -1139,13 +1138,11 @@ const switchToLightTheme = () => {
     }
 
 // LOCAL STORAGE
-console.log(theme)
 
 
     checkbox.addEventListener('click', () => {
-   
-        console.log(theme)
-        if (theme === "dark" || theme == "null" ) {
+        
+        if (theme === "dark") {
             localStorage.setItem("data-theme", "light")
             theme = "light";
             switchToLightTheme();
@@ -1156,7 +1153,6 @@ console.log(theme)
             theme = "dark";
           
         }
-        console.log(theme)
     })
 
     window.onload = () => {
