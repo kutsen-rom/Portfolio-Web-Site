@@ -1,9 +1,20 @@
 /* html {
     cursor: url("../images/curosr-classic-1-06.cur"), default;
 } */
+html {
+    --main-color: black;
+    --secondary-color: white;
+}
+
+html[data-theme="light"] {
+    --main-color: white;
+    --secondary-color: black;
+}
+
 html,
 body {
   height: 100%;
+
 }
 
 :target {
@@ -11,47 +22,47 @@ body {
 }
 
 *::selection {
-    background: white;
-    color: black;
+    background: var(--secondary-color);
+    color: var(--main-color);
 }
 
 ::-webkit-scrollbar {
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 1px solid white;
-    border-right: 2px solid white; 
+    border: 1px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    border: 2px solid white;
-    border-right: 3px solid white;
+    border: 2px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    border: 1px solid white;
-    border-right: 2px solid white;
+    border: 1px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
 }
 
 body {
     /* background-attachment: fixed; */
     font-family: 'Major Mono Display', monospace;
-    color: white;
+    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     background-image: url(../images/background-12.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120%;
-    color: white; 
+    color: var(--secondary-color); 
     animation: background 300s infinite linear;
     }
 
 header {
     height: 70px;
-    background-color: black;
-    border-bottom: 2px solid white;
+    background-color: var(--main-color);
+    border-bottom: 2px solid var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,8 +72,8 @@ header {
 }
 
 footer {
-    background-color: black;
-    border-top: 2px solid white;
+    background-color: var(--main-color);
+    border-top: 2px solid var(--secondary-color);
     padding: 1% 0;
     margin-top: auto;
 }
@@ -128,7 +139,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .title {
@@ -158,7 +169,7 @@ a {
 /*    EXPERIMENTAL  CORNERS   */
 .corner-nav {
     --all:0px;
-    --b: white;
+    --b: var(--secondary-color);
  
     background:
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 0px)    ,transparent 0) top left    /50% 50%,
@@ -166,15 +177,15 @@ a {
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
      -webkit-mask-size:50.5% 50.5%;
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
@@ -183,7 +194,7 @@ a {
 
 .corner-button {
         --all:0px;
-        --b: white; 
+        --b: var(--secondary-color); 
         background:
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
@@ -193,15 +204,15 @@ a {
         background-origin:border-box;
         background-repeat:no-repeat;
         -webkit-mask:
-           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
            mask:
-           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
          -webkit-mask-size:50.5% 50.5%;
          mask-size:50.5% 50.5%;
          -webkit-mask-repeat:no-repeat;
@@ -210,26 +221,26 @@ a {
 
   .corner-box {
     --all:0px;
-    --b:white;
+    --b:var(--secondary-color);
     
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,black);
+       var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
      -webkit-mask-size:50.5% 50.5%;
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
@@ -238,26 +249,26 @@ a {
 
   .corner-box-projects {
     --all:0px;
-    --b:white;
+    --b:var(--secondary-color);
     
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1.5px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,black);
+       var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
      -webkit-mask-size:50.5% 50.5%;
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
@@ -266,26 +277,26 @@ a {
 
   .corner-box-project {
     --all:0px;
-    --b:white;
+    --b:var(--secondary-color);
     
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,black);
+       var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
      -webkit-mask-size:50.5% 50.5%;
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
@@ -294,26 +305,26 @@ a {
 
   .corner-box-menu {
     --all:0px;
-    --b:black;
+    --b:var(--main-color);
 
     background:
        linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
        linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
        linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
        linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2.5px)   ,transparent 0) top right   /50% 50%,
-       var(--img,black);
+       var(--img,var(--main-color));
     background-origin:border-box;
     background-repeat:no-repeat;
     -webkit-mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
        mask:
-       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+       linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+       linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+       linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+       linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
      -webkit-mask-size:50.5% 50.5%;
      mask-size:50.5% 50.5%;
      -webkit-mask-repeat:no-repeat;
@@ -346,7 +357,7 @@ a {
     transform: skew(30deg);
     margin: 0 20px;
     width: 10px;
-    border-right: 2px solid white;
+    border-right: 2px solid var(--secondary-color);
     height: 70px;
 }
 
@@ -355,7 +366,7 @@ a {
    position: absolute;
    margin-right: 100px;
     width: 10px;
-    border-right: 2px solid white;
+    border-right: 2px solid var(--secondary-color);
     height: 70px;
 }
 
@@ -382,9 +393,9 @@ a {
 } */
 
 .box {
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     border-radius: 3px;
-    background-color: black;
+    background-color: var(--main-color);
     width: 30%;
     height: 75%;
 }
@@ -423,9 +434,9 @@ a {
 } */
 
 .contact {
-border: 2px solid white;
-background-color: white;
-color: black;
+border: 2px solid var(--secondary-color);
+background-color: var(--secondary-color);
+color: var(--main-color);
 width: 150px;
 height: 50px;
 border-radius: 1px;
@@ -467,9 +478,9 @@ justify-content: center;
 .project-image-container {
     width: 56.25%;
     height: 100%;
-    background-color: white;
+    background-color: var(--secondary-color);
     background-size: cover;
-    border: 0.96px solid white;
+    border: 0.96px solid var(--secondary-color);
     border-radius: 1px;
     display: flex;
     align-items: center;
@@ -582,7 +593,7 @@ justify-content: center;
 .skills {
     display: flex;
     width: 60%;
-    background-color: black;
+    background-color: var(--main-color);
     height: 100px;
     align-items: center;
     margin: 5% auto;
@@ -591,9 +602,7 @@ justify-content: center;
     border-radius: 1px;
 }
 
-.skills-animation {
-    animation: skills-accent 2s;
-}
+
 
 .skill {
     width: 50px;
@@ -650,15 +659,15 @@ justify-content: center;
     margin-top: 5%;
     width: 60%;
     height: 55%;
-    border: 1px solid white;
+    border: 1px solid var(--secondary-color);
 }
 
 .pr-page-box {
     width: 30%;
     height: 20vw;
     margin-bottom: 2%;
-    background-color: black;
-    border: 1px solid white;
+    background-color: var(--main-color);
+    border: 1px solid var(--secondary-color);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -690,11 +699,11 @@ justify-content: center;
 }
 
 .contact-box {
-    background-color: black;
+    background-color: var(--main-color);
     width: 80%;
     height: 79%;
     margin: auto;
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -843,48 +852,48 @@ justify-content: center;
 
 @keyframes navis {
     0% {
-        background-color: white;
-        border: 2px solid white;
-        color: black;
+        background-color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+        color: var(--main-color);
     }
     100% {
-        background-color: black;
-        border: 2px solid black;
-        color: white;
+        background-color: var(--main-color);
+        border: 2px solid var(--main-color);
+        color: var(--secondary-color);
     }
 }
 
 @keyframes uncontacts {
     0% {
-        background-color: black;
-        border: 2px solid white;
-        color: white;
+        background-color: var(--main-color);
+        border: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
         --all:0px;
-        --b: white;
+        --b: var(--secondary-color);
 
         background:
           
            linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
            linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
           
-           var(--img,black);
+           var(--img,var(--main-color));
         background-origin:border-box;
         background-repeat:no-repeat;
         -webkit-mask:
-           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+           linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,var(--secondary-color) 0) bottom left,
+           linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),var(--secondary-color) 0) bottom right,
+           linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,var(--secondary-color) 0) top left,
+           linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,var(--secondary-color) 0) top right;
          -webkit-mask-size:50.5% 50.5%;
          -webkit-mask-repeat:no-repeat;
     }
     
     100% {
-        background-color: white;
-        color: black;
+        background-color: var(--secondary-color);
+        color: var(--main-color);
 }}
 
-@keyframes navis-light {
+/* @keyframes navis-light {
     0% {
         background-color: black;
         border: 2px solid black;
@@ -925,42 +934,42 @@ justify-content: center;
     100% {
         background-color: black;
         color: white;
-}}
+}} */
 
 @keyframes navi {
     0% {
-        background-color: white;
-        outline: 2px solid black;
-        color: black;
+        background-color: var(--secondary-color);
+        outline: 2px solid var(--main-color);
+        color: var(--main-color);
     }
     100% {
-        background-color: black;
-        color: white;
+        background-color: var(--main-color);
+        color: var(--secondary-color);
     }
 }
 
 @keyframes uncontact {
     0% {
-        background-color: black;
-        outline: 2px solid white;
-        color: white;
+        background-color: var(--main-color);
+        outline: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
     }
     
     100% {
-        background-color: white;
-        color: black;
+        background-color: var(--secondary-color);
+        color: var(--main-color);
     }
 }
 
 @keyframes contact {
     100% {
-        background-color: black;
-        outline: 2px solid white;
-        color: white;
+        background-color: var(--main-color);
+        outline: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
     }
 }
 
-@keyframes contact-light {
+/* @keyframes contact-light {
     100% {
         background-color: white;
         outline: 2px solid black;
@@ -979,7 +988,7 @@ justify-content: center;
         background-color: black;
         color: white;
     }
-}
+} */
 
 @keyframes diss {
     0% {
@@ -1079,13 +1088,94 @@ justify-content: center;
     }
 }
 
+@keyframes left-arrow-hover-light {
+    0% {
+        background-image: url(../images/light-arrow-left.svg);
+    }
+
+    100% {
+        background-image: url(../images/arrow-classic-left.svg);
+        
+    }
+}
+
+@keyframes left-arrow-unhover-light {
+    0% {
+        background-image: url(../images/arrow-classic-left.svg);
+    }
+
+    100% {
+        background-image: url(../images/light-arrow-left.svg);
+        
+    }
+}
+
+@keyframes left-arrow-active-light {
+    0% {
+        background-image: url(../images/arrow-classic-left.svg);
+        
+       position: relative;
+        left: 0%;
+    }
+
+    50% {
+        left: -2%;
+    }
+    
+    100% {
+       position: relative;
+       left: 0.1%;
+       background-image: url(../images/light-arrow-left.svg);
+    }
+}
+
+@keyframes right-arrow-hover-light {
+    0% {
+        background-image: url(../images/light-arrow-right.svg);
+    }
+
+    100% {
+        background-image: url(../images/arrow-classic-right.svg);
+     
+    }
+}
+
+@keyframes right-arrow-unhover-light {
+    0% {
+        background-image: url(../images/arrow-classic-right.svg);
+    }
+
+    100% {
+        background-image: url(../images/light-arrow-right.svg);
+        
+    }
+}
+
+@keyframes right-arrow-active-light {
+    0% {
+       background-image: url(../images/arrow-classic-right.svg);
+       position: relative;
+        right: 0%;
+    }
+
+    50% {
+        right: -2%; 
+    }
+    
+    100% {
+       position: relative;
+       right: 0.01%;
+       background-image: url(../images/light-arrow-right.svg);
+    }
+}
+
 @keyframes skills-accent {
     0% {
         border: 2px solid transparent;
     }
 
     50% {
-        border: 2px solid white;
+        border: 2px solid var(--secondary-color);
     }
 
     100% {
@@ -1093,6 +1183,80 @@ justify-content: center;
     }
 }
 
+/* @keyframes skills-accent-light {
+    0% {
+        border: 2px solid transparent;
+    }
+
+    50% {
+        border: 2px solid black;
+    }
+
+    100% {
+        border: 2px solid transparent;
+    }
+} */
+
+
+    @keyframes linked-in-light-hover {
+        0% {
+            background-image: url(../images/light-theme/linked-in-light.svg)
+        }
+
+        100% {
+            background-image: url(../images/light-theme/linked-in-hover-light.svg);
+        }
+    }
+
+    @keyframes linked-in-light-unhover {
+        0% {
+            background-image: url(../images/light-theme/linked-in-hover-light.svg);
+        }
+
+        100% {
+            background-image: url(../images/light-theme/linked-in-light.svg);
+        }
+    }
+
+    @keyframes mail-light-hover {
+        0% {
+            background-image: url(../images/light-theme/mail-light.svg)
+        }
+
+        100% {
+            background-image: url(../images/light-theme/mail-hover-light.svg);
+        }
+    }
+
+    @keyframes mail-light-unhover {
+        0% {
+            background-image: url(../images/light-theme/mail-hover-light.svg);
+        }
+
+        100% {
+            background-image: url(../images/light-theme/mail-light.svg);
+        }
+    }
+
+    @keyframes github-light-hover {
+        0% {
+            background-image: url(../images/light-theme/sk-github-light.svg);
+        }
+
+        100% {
+            background-image: url(../images/light-theme/github-outline-light.svg);
+        }
+    }
+
+    @keyframes github-light-unhover {
+        0% {
+            background-image: url(../images/light-theme/github-outline-light.svg);
+        }
+
+        100% {
+            background-image: url(../images/light-theme/sk-github-light.svg);
+        }
+    }
 /*      MEDIA QUERIES      */
 
  @media only screen and (max-width: 1470px) {
@@ -1523,7 +1687,7 @@ justify-content: center;
 
     .menu {
         height: 40px;
-        background-color: black;
+        background-color: var(--main-color);
         display: flex;
         flex-direction: column;
         overflow: hidden;
