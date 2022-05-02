@@ -872,7 +872,7 @@ const switchToLightTheme = () => {
         })
         
         switchButton.addEventListener("mouseleave", () => {
-            switchButton.style.animation = "switch-unchange-light 0.3s forwards";
+            // switchButton.style.animation = "switch-unchange-light 0.3s forwards";
             switchButton.classList.remove('switch-change-light')
             switchButton.classList.add("switch-unchange-light")
         })
