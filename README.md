@@ -1,1 +1,1 @@
-[https://navsi100rom.github.io/Portfolio-Web-Site/](https://kutsen-rom.github.io/Portfolio-Web-Site/)
+Behold, my very first [Portfolio Website](https://kutsen-rom.github.io/Portfolio-Web-Site/), a masterpiece crafted with pure JavaScript in the bygone era. While it may not boast practicality, it embodies an immense wave of creativity that flowed through me during its creation. The aesthetic allure of this creation fills my heart with boundless admiration.
